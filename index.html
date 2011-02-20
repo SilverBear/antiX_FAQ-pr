@@ -1,0 +1,2844 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html dir="ltr">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>antiX FAQ &lt;br&gt;</title>
+  <style type="text/css">p {
+  font: 14px arial,sanserif;
+}
+h1 {
+  color: #333366;
+  font: 28px arial,sanserif;
+  font-weight: bold;
+  text-align: center;
+}
+h2 {
+  color: #336666;
+  font: 21px arial,sanserif;
+  font-weight: bold;
+  text-align: left;
+}
+h3 {
+  color: #336666;
+  font: 18px arial,sanserif;
+  font-weight: bold;
+  text-align: center;
+}
+h4 {
+  color: #333399;
+  font: 15px arial,sanserif;
+  font-weight: bold;
+  text-align: left;
+}
+h5 {
+  color: #333399;
+  font: 13px arial,sanserif;
+  font-weight: bold;
+  text-align: left;
+}
+pre {
+  font: 12px monospace;
+  line-height: 16px;
+  background-color: #e6e6e6;
+  padding-right: 1em;
+}
+  </style>
+</head>
+<body dir="ltr"
+ style="background-color: rgb(255, 255, 255); font-family: arial,sanserif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+<table id="page" width="100%" align="left" border="0" cellpadding="3"
+ cellspacing="1">
+  <tbody>
+    <tr valign="top" align="left" bgcolor="white">
+      <td valign="top" width="1000" align="left">
+      <table>
+        <tbody id="banner" valign="top" align="left">
+          <tr align="center" bgcolor="#d3d3d3">
+            <td height="70" valign="top" width="700" align="center"
+ bgcolor="#d3d3d3">
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td height="80" width="80" align="left"> <a
+ href="http://antix.mepis.com/index.php/Brazilian-Portuguese">
+ <img src="antix-logo.png" title="Página inicial do antiX" alt="Página inicial do antiX" height="111" width="138"
+align="left" border="0"></a><br>
+                  </td>
+                  <td valign="top" width="700" align="center">
+                  <h1>Perguntas frequentes</h1>
+                  <span
+ style="color: rgb(51, 51, 102); font-size: 14px; font-style: normal; font-weight: bold;">revisto
+para
+a
+versão
+8.5
+do
+antiX</span>
+                  <dl>
+                    <dt
+ style="font-family: arial,sanserif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 16px; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+                      <strong><a href="#windman">Introdução</a> <a
+ href="#icewm">IceWM</a> <a href="#fluxbox">Fluxbox</a> <a href="#rox">ROX</a>
+                      <a href="#conky">Conky</a> <a href="#smxi">smxi</a></strong>
+                    </dt>
+                  </dl>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+    <tr valign="top" align="left">
+      <td valign="top" width="40" align="left"><br>
+      </td>
+    </tr>
+    <tr valign="top" align="left">
+      <td valign="top" width="40" align="left">
+      <table width="100%" align="left" bgcolor="#ffffff" border="0"
+ cellpadding="5" cellspacing="0">
+        <tbody>
+          <tr>
+            <td
+ style="font-family: arial,san-serif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+            <h2 id="windman"><u>Introdução</u></h2>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3>Bem-vindo(a) às perguntas frequentes do antiX!</h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p
+ style="font-family: arial,sanserif; font-style: normal; font-variant: normal; font-weight: normal; font-size: 14px; line-height: normal; font-size-adjust: none; font-stretch: normal;">Este
+documento
+é
+destinado
+ao
+usuário
+de
+primeira
+viagem
+olhando
+para
+um
+ambiente
+de
+trabalho
+que
+difere
+de
+um
+familiar
+na
+aparência
+e
+na
+função.
+Essa
+diferença
+é
+devida
+aos
+
+            <a href="http://pt.wikipedia.org/wiki/Gerenciador_de_janela">gerenciadores
+de
+janela</a> utilizados para controlar o que o usuário final pode ver
+e fazer. Esperamos que estas perguntas frequentes lhe dêem uma
+orientação básica para o antiX e seus gerenciadores de janela e
+forneçam os meios para explorá-los ainda mais por conta própria.</p>
+            <h4><span style="font-weight: bold;">Configuração Básica
+Após a Instalação Inicial </span><br>
+            </h4>
+            <ul>
+              <li>Como atualizar o sistema? Veja <a
+ href="#Como_atualizo_o_sistema">aqui</a>.</li>
+            </ul>
+            <ul>
+              <li>Como configurar drivers de vídeo nVidia e ATI? Veja <a
+ href="#How_do_I_install_nvidiaAti_driver_for">aqui</a>.</li>
+            </ul>
+            <ul>
+              <li>Como autenticar-se automaticamente (autologin)? Ou
+pela <span style="font-weight: bold;">Central de controle -&gt;
+XWindow -&gt;
+Autenticação Automática</span> ou manualmente edite o
+/etc/slim.conf como root, descomente as linhas 82 e 86 e na linha 86
+substitua 'demo' pelo seu nome de usuário. Reinicie para verificar.</li>
+            </ul>
+            <ul>
+              <li>Como editar a lista de fontes do apt?&nbsp; Ou via
+Synaptic, <span style="font-weight: bold;">Central de controle -&gt;
+Sistema -&gt;
+Gerenciar Pacotes -&gt; Configuração -&gt; Repositórios</span> ou
+editar como root /etc/apt/sources.list<br>
+              </li>
+            </ul>
+            <ul>
+              <li>Instruções para multimídia? Veja <a
+ href="#How_do_I_play_music_">aqui</a>.</li>
+            </ul>
+            <ul>
+              <li>Como configurar e ativar o Firewall? O FireHol está
+instalado, mas não
+habilitado. Abra a <span style="font-weight: bold;">Central de
+controle
+-&gt; Rede -&gt; Gerenciar Firewall -&gt; Configurar FireHol</span>,
+mude
+START_FIREHOL=NO para START_FIREHOL=YES, clique em salvar e em seguida
+clique em <span style="font-weight: bold;">Gerenciar Firewall -&gt;
+Iniciar FireHol</span>.</li>
+            </ul>
+            <ul>
+              <li>Como configurar o Wicd para redes sem fio. Veja <a
+ href="http://antix.mepis.com/index.php/Howto_articles#Wicd">aqui</a>.</li>
+            </ul>
+Por favor, envie comentários e sugestões para <a
+ href="http://antix.freeforums.org/documentation-f18.html">a seção de
+documentação</a> do fórum do antiX.<br>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="window-managers"><u>Gerenciadores de Janela</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Quais gerenciadores de janela estão disponíveis no
+antiX? </h4>
+            <p>Dois gerenciadores de janela diferentes vêm instalados e
+prontos para usar:</p>
+            <ol>
+              <li>o leve IceWM (padrão).</li>
+              <li>o gerenciador minimalista Fluxbox.</li>
+            </ol>
+            <p>Ambos os gerenciadores de janela podem ser executados
+com ou sem:</p>
+            <ul>
+              <li>o ambiente de trabalho ROX que fornece a
+funcionalidade de arrastar e soltar para a área de trabalho.<br>
+              </li>
+              <li>o monitor do sistema Conky que exibe informações em
+tempo real.</li>
+            </ul>
+            <h4>Como faço para mudar de um GJ para outro? </h4>
+            <h5>No IceWM:</h5>
+            <p>Você pode mudar a partir do IceWM padrão clicando com o
+botão direito em qualquer lugar do desktop <strong>-&gt; Sair... -&gt;
+Sair da sessão,</strong> que o levará de volta para a tela de login do
+SLiM<em>.</em>
+Pressione F1 até ver <em>Fluxbox</em> e então autentique-se.</p>
+            <h5>No Fluxbox:</h5>
+            <p>Você pode trocar do Fluxbox para o IceWM com um clique
+com o botão direito no desktop <strong>-&gt; Sair -&gt; Sair da Sessão,</strong>
+o que o
+levará de volta para a tela de login do SLiM. O padrão é para o IceWM,
+basta autenticar-se e estará de volta ao IceWM. F1 alterna entre as
+opções de GJ, além
+do IceWM e do Fluxbox você não será capaz de autenticar-se em nenhuma
+outra até que você
+instale esses gerenciadores de janela ou ambientes de trabalho. Vários
+podem ser instalador através do metapackage-installer.</p>
+            <h4>E para definir qual é o ambiente padrão?</h4>
+            <span style="font-weight: bold;">Central de controle -&gt;
+XWindow -&gt; Config. Opções de Acesso</span>. Na linha em que se lê
+"XINITRC_DEFAULT="icewm-session"",
+substitua "icewm-session" por "startfluxbox" ou por algum outro de sua
+preferência que esteja instalado.<br>
+            <h4>Ligar/desligar o Conky: </h4>
+            <ul>
+              <li><strong>IceWM:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+clique com o botão direito na área de trabalho ou pressione a tecla
+Super esquerda para abrir o menu e<span style="font-weight: bold;"> </span><strong>Área
+de
+trabalho
+-&gt;
+Configuração
+-&gt;
+Conky
+lig./desl.</strong></li>
+              <li><strong>Fluxbox:</strong>&nbsp;&nbsp;&nbsp; clique
+com o botão direito na área de trabalho e <span
+ style="font-weight: bold;"></span><strong>Área de trabalho -&gt; Área
+de trabalho -&gt; Conky
+lig./desl.</strong></li>
+            </ul>
+            <h4>Como faço para sair do antiX? </h4>
+            <ul>
+              <li><strong>IceWM:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+na barra de ferramentas você
+vai ver um ícone de desligar (vermelho) que ao ser clicado oferecerá as
+opções de bloqueio de tela, hibernação, reinício,
+saída da sessão, suspensão ou desligamento.<br>
+Também no menu em<strong> Sair...</strong>
+há diversas opções, incluindo o desligamento.<br>
+              </li>
+              <li><strong>Fluxbox:</strong>&nbsp;&nbsp;&nbsp; clique
+com o botão direito
+em qualquer lugar da área de trabalho e <span
+ style="font-weight: bold;">Sair</span><strong> </strong>e ser-lhe-ão
+apresentadas as mesmas opções de acima.<br>
+              </li>
+            </ul>
+            <h4>Alguns grandes recursos no antiX.</h4>
+            <ul>
+              <li><strong>antiX2usb:</strong> para aqueles
+familiarizados com a opção de persistência no Linux Puppy em live-USB,
+live-CD ou fromiso: <em>bem-vindos!</em> O <strong>antiX</strong>
+agora traz um recurso similar chamado <strong>antiX2usb</strong> que é
+encontrado na <strong>Central de controle -&gt; Discos.</strong><br>
+Você pode usar um sistema live <em>fromiso</em> para instalar o antiX
+num pendrive com opção de persistência através do antiX2usb e pelo <span
+ style="font-style: italic;">live cd</span> ou pelo sistema instalado
+você
+pode fazer o mesmo usando um arquivo iso do antiX ou do MEPIS. Para uma
+explicação mais detalhada, consulte <a
+ href="http://antix.mepis.com/index.php/Howto_articles#antix2usb">aqui</a>.<br>
+&nbsp;</li>
+              <li>O <span style="font-weight: bold;">metapackage-installer</span><strong></strong>
+está
+localizado no menu em <strong>Aplicativos -&gt; Acessórios -&gt;
+metapackage-installer.</strong> Você pode instalar pacotes para o
+Disco, Educação, Jogos, Linguagem, Multimídia, Rede, Não-livre,
+Escritório,
+Servidor, Gerenciadores de janela. . . basta escolher o pacote que você
+deseja e o
+instalador fará o resto. (conexão de Internet necessária)<br>
+&nbsp;<br>
+&nbsp;</li>
+              <li>O <a href="http://luckybackup.sourceforge.net/"><strong>LuckyBackup</strong></a>
+pode ser encontrado na <strong>Central de controle -&gt; Discos -&gt;
+Backup do Sistema</strong> ou no menu em <strong>Aplicativos -&gt;
+Ferramentas -&gt; luckyBackup (super user \)</strong><br>
+                <br>
+              </li>
+            </ul>
+            <br>
+            <hr>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td height="80" width="80" align="left"> <br>
+                  </td>
+                  <td valign="top" width="500" align="left">
+                  <h2 id="icewm">IceWM</h2>
+                  <ol
+ style="font-family: sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+                    <li><a href="#First_look-iwm">Primeiro olhar</a></li>
+                    <li><a href="#Basic_configuration-iwm">Configuração
+básica</a></li>
+                    <li><a href="#Basic_operation-iwm">Operação básica</a></li>
+                    <li><a href="#Basic_customization-iwm">Personalização
+básica</a></li>
+                    <li><a href="#Advanced-iwm">Avançado</a></li>
+                    <li><a href="#Links-iwm">Links</a></li>
+                  </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="First_look-iwm"><u>IceWM: primeiro olhar</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4> O que é isso?</h4>
+            <p>O ambiente de trabalho é executado pelo <a
+ href="http://www.icewm.org/">IceWM</a>, um gerenciador de janelas leve
+para <a href="http://pt.wikipedia.org/wiki/X_Window_System">o X Window
+System</a> cujo objetivo é a rapidez, simplicidade e não ficar no
+caminho do usuário. </p>
+            <h4>Onde estão os ícones? </h4>
+            <p>O IceWM não usa ícones mas o antiX traz três aplicativos
+diferentes que possuem a funcionalidade de gerir ícones na área de
+trabalho: ROX,&nbsp; <a href="http://pcmanfm.sourceforge.net/">PCManFM</a>
+e <a href="http://idesk.sourceforge.net/wiki/index.php/Main_Page">iDesk</a>.<br>
+            </p>
+            <p>O ROX já vem pré-configurado com alguns ícones no antiX,
+abra-o em <span style="font-weight: bold;">Menu -&gt; Área de trabalho
+-&gt; Configuração -&gt; Quadro ROX lig./desl.</span>. Para maiores
+informações sobre o funcionamento do ROX-Desktop, inclusive o
+gerenciamento de ícones, <a href="#rox">veja a
+seção abaixo</a>.<br>
+            </p>
+            <p>Para usar o PCManFM para isso, abra <span
+ style="font-weight: bold;">Menu -&gt; Área de trabalho -&gt;
+Configuração -&gt; Ícones PCManFM</span>. Ele pode ainda gerir o papel
+de parede.<br>
+            </p>
+            <p>Para usar o iDesk para isso, abra <span
+ style="font-weight: bold;">Menu -&gt; Área de trabalho -&gt;
+Configuração -&gt; Ícones IDesk</span> ou a <span
+ style="font-weight: bold;">Central de controle -&gt; Área de Trabalho
+-&gt; Gerenciar Ícones idesk</span>. Isso abre o tidesktool, que é uma
+interface gráfica para o iDesk e serve para criar os ícones desejados
+assim como para gerir o papel de parede (<a
+ href="#Como_fa%C3%A7o_para_mudar_o_fundo_de_tela_">veja aqui</a>).<br>
+            </p>
+            <p>Em todos os três casos acima é preciso habilitar os
+respectivos programas no arquivo ~/.icewm/startup para que iniciem
+automaticamente no início da sessão. Abra <span
+ style="font-weight: bold;">CC -&gt; Configurar Icewm -&gt; startup</span>
+e
+descomente a linha do programa que tiver escolhido, seja o pcmanfm, o
+idesk ou o rox, abaixo da linha<br>
+            </p>
+            <pre>## Set desktop icons<br></pre>
+            <h4>O que é aquela coisa no canto superior esquerdo?</h4>
+            <p>Essa é a saída do <a
+ href="http://conky.sourceforge.net/">Conky</a>, um monitor do
+sistema leve que fornece informações em tempo real sobre diversos
+aspectos
+do seu computador.</p>
+            <h4>E a barra na parte inferior?</h4>
+            <p>Essa é chamada <em style="font-style: italic;">barra</em><span
+ style="font-style: italic;"> de </span><em style="font-style: italic;">tarefas</em>
+ou <em>painel</em> e ela exibe os botões (E -&gt; D) Favoritos,
+Mostrar área de trabalho, Home, Terminal, Navegador, Volume, Central de
+controle, Sair, Áreas
+de trabalho 1-4 (ou desktops) e na extrema-direita, data/hora. Ela é
+personalizável. Veja <a href="#Basic_customization-iwm">aqui</a>.<br>
+            </p>
+            <p><span style="font-weight: bold;">(Nota:</span> se você
+passar o ponteiro do mouse sobre os itens na barra de ferramentas você
+verá os nomes e vamos chamar o botão Favoritos também como Menu.)<br>
+            </p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_configuration-iwm"><u>IceWM:
+configuração básica</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 id="wireless-icewm">Como faço para configurar uma
+conexão sem fio? </h4>
+            <p>Existem 3 opções, todas encontradas na Central de
+controle do antiX: Wicd, rutilt e Ceni. </p>
+            <p>1) Na <strong>Central de controle -&gt; Rede -&gt;</strong>
+você vai encontrar a interface para rede sem fio <a
+ href="http://wicd.sourceforge.net/">Wicd</a> que o antiX usa para
+fazer
+a conexão sem fio. Dicas sobre o seu uso podem ser encontradas <a
+ href="http://www.mepis.org/docs/en/index.php/Wicd">aqui.</a> Veja
+também <a
+ href="http://www.mepis.org/docs/en/index.php/Wireless_connection">a
+discussão pormenorizada na
+Wiki do MEPIS</a> para mais informações e procure no fórum <a
+ href="http://mepislovers.org/forums/index.php">MepisLovers</a>
+para placas específicas.</p>
+            <p>2) A ferramenta pela linha de comando (CLI) <a
+ href="http://manual.sidux.com/en/internet-connecting-en.htm">Ceni</a>
+dos desenvolvedores do <a href="http://sidux.com/">Sidux</a> é um
+invólucro muito eficiente para a criação de uma conexão: escolha
+em <span style="font-style: italic;">Hardware interfaces</span> a sua
+conexão com ou sem fio, clique na sua
+escolha e você poderá configurá-la em seguida. É um
+aplicativo bem intuitivo. </p>
+            <p>3) O Rutilt Wlan Manager também está incluído,
+localizado
+na <strong>CC</strong> antiX e em <strong>Aplicativos -&gt; Rede
+-&gt;
+rutilt WLAN Manager.</strong></p>
+            <p>4) O Wpa_gui também está incluído e é encontrado em <strong>Aplicativos
+-&gt;
+Rede
+-&gt;
+wpa_gui.<br>
+            </strong></p>
+            <h4><a name="E_quanto_à_conexão_DSL"></a>E quanto à conexão
+DSL? </h4>
+            <p><strong>Central de controle -&gt; Rede
+-&gt; Conexão DSL</strong> abre a ferramenta de configuração PPPOE.
+Forneça o nome de usuário e senha para o seu provedor de Internet e
+opte se deseja ou não que a conexão seja iniciada automaticamente ao
+carregar o sistema. Para as perguntas que não souber responder opte por
+'sim' (o padrão).<br>
+            </p>
+            <h4><a name="E_quanto_à_conexão_discada"></a>E quanto à
+conexão discada? </h4>
+Atualmente é bastante difícil encontrar drivers adequados para os
+antigos e muito comuns softmodems. O site de referência para esses
+drivers é o <a href="http://linmodems.org">Linmodems</a>. No entanto
+pode ser muito trabalhoso ou até impraticável fazê-los funcionar.<br>
+            <p>Para aqueles que tenham hardmodems ou tenham encontrado
+drivers adequados para seus softmodems a <strong>Central de controle
+-&gt; Rede
+-&gt; Conexão
+Discada</strong> ou <span style="font-weight: bold;">Aplicativos -&gt;
+Rede -&gt; GNOME PPP</span> lançam <a
+ href="http://www.gnomefiles.org/app.php?soft_id=41">o Gnome PPP,</a>
+uma interface gráfica simples para a excelente ferramenta de discagem <a
+ href="http://freshmeat.net/projects/wvdial/">WvDial.</a> </p>
+            <h4><a name="How_do_I_set_up_printing_"></a> Como faço para
+configurar a impressão? </h4>
+            <p>A menos que você tenha uma impressora HP (ver o item
+seguinte), faça um dos seguintes procedimentos:</p>
+<p>1) <strong>CC -&gt; Hardware -&gt; Instalar Impressora.</strong>&nbsp; Uma tela será aberta mostrando-lhe as impressoras que foram encontradas, com um ícone para clicar que leva a um assistente para adicionar uma nova impressora.</p>
+            <p>2) Abra um navegador <strong>(Menu -&gt; Navegador),</strong>
+e digite:</p>
+            <pre><a href="http://localhost:631/">http://localhost:631/ </a></pre>
+            <p>Isso levará você para a interface do <a
+ href="http://en.wikipedia.org/wiki/Common_Unix_Printing_System">CUPS,</a>
+onde você pode configurar sua impressora. Para obter ajuda com
+impressoras e drivers específicos, verifique a <a
+ href="http://www.openprinting.org/printer_list.cgi">base de dados
+OpenPrinting.</a></p>
+            <h4>Como faço para configurar uma impressora HP? </h4>
+            <p>O método mais fácil é usar o metapackage-installer,
+localizado em <strong>Aplicativos -&gt; Acessórios -&gt;
+metapackage-installer.</strong> Abra-o, clique na seta para o Office,
+marque a caixa de seleção para <em>HP_printing</em> e então, <em>Instalar.</em></p>
+            <p>Se você preferir fazer você mesmo, você precisa instalar
+(ver <a href="antix_perguntas_frequentes.html#install-1">instalação
+de
+software),</a> alguns pacotes adicionais
+(<span style="font-weight: bold;">atenção!</span> Isso pode ser
+incompleto devido às eventuais subsequentes alterações em
+pacotes - use por sua própria conta e risco!):</p>
+            <pre>hpijs <br>hpijs-ppd <br>hplip-data <br>hplip <br>hplip-GUI <br>cups-pdf<br>cupsys-client <br>cupsys-driver-gutenprint <br>gs-gpl <br>lpr <br>magicfilter <br>GV <br>xprint-utils</pre>
+            <p>Você deve então ser capaz de configurar sua impressora
+abrindo um navegador <strong>(Menu -&gt; Navegador)</strong>
+e entrando em:</p>
+            <pre><a href="http://localhost:631/">http://localhost:631/ </a></pre>
+            <h4><a name="What_about_a_scanner_"></a> Que tal um
+scanner? </h4>
+            <p>Este deve ser fácil. Conecte o scanner ao computador e
+clique em <strong>Menu -&gt; Aplicativos -&gt; Gráficos -&gt; Xsane
+Image scanning program</strong>.<br>
+Você também pode baixar e instalar via Synaptic o <a
+ href="http://www.sane-project.org/man/xscanimage.1.html">Xscanimage</a>.
+Depois de atualizar o menu, abra-o, selecione entre os scanners que ele tenha encontrado (ele pode ter várias entradas para um scanner, experimente uma a uma até que ela funcione) e você verá uma tela muito básica, cujo funcionamento é bastante evidente. Para ajustar os valores do seu scanner, clique em
+            <strong>Menu -&gt;
+Executar</strong> e digite<span style="font-weight: bold;"> xcam</span><strong>.</strong></p>
+            <p>Você pode então editar o scan no <a
+ href="http://geeqie.sourceforge.net/">Geeqie</a> <strong>(Menu -&gt;
+Applicativos -&gt; Gráficos).</strong> Para mais detalhes sobre o uso
+do Geeqie, verifique <a
+ href="http://sourceforge.net/apps/trac/geeqie/wiki/GuideIndex">seu
+Manual do Usuário.</a></p>
+<h4><a name="What_application_should_I_use_for_system"></a>Qual aplicativo devo usar para a configuração do sistema?</h4>
+            <p>O antiX vem com dois dos <a
+ href="http://www.mepis.org/docs/en/index.php/MEPIS_System_Assistant">Assistentes
+MEPIS</a> para fazer a configuração do sistema ou o gerenciamento de
+usuários mais fácil. Eles podem ser encontrados na <strong>CC do antiX
+-&gt; Sistema -&gt; Configurar Sistema</strong> ou <strong>Gerenciar
+Usuários.</strong></p>
+            <p>Detalhes sobre esses utilitários podem ser encontrados
+na <a
+ href="http://www.mepis.org/docs/en/index.php/MEPIS_System_Assistant">Wiki
+do
+MEPIS.</a></p>
+<h4><a name="I_want_to_configure_my_monitor--how_do_I"></a>Quero configurar o meu monitor - como posso fazer isso? </h4>
+            <p>O método mais fácil é através da <strong>CC -&gt;
+Hardware -&gt; Resolução de Tela.</strong> </p>
+            <p>Isso irá lançar o aplicativo <span
+ style="font-style: italic;">grandr</span>.</p>
+<h4><a name="Are_there_any_other_MEPIS_Assistants"></a>Existem outros Assistentes do MEPIS que eu deva saber? </h4>
+            <p>O Assistente de Usuários do MEPIS reúne uma série de
+ferramentas de gerenciamento de usuários. É encontrado na <strong>Central
+de
+controle
+-&gt;
+Sistema.</strong> </p>
+            <p>Para mais detalhes sobre esse aplicativo consulte a <a
+ href="http://www.mepis.org/docs/en/index.php/MEPIS_User_Assistant">Wiki
+do
+MEPIS.</a></p>
+<h4><a name="Can_I_use_a_MP3_player_such_as_an_iPod"></a>Posso usar um leitor de MP3 como o iPod com o antiX? </h4>
+            <p>Você pode <a href="#music-1">reproduzir arquivos MP3
+com o XMMS</a> e você pode ver e editar etiquetas ID3 instalando o
+programa <a href="http://easytag.sourceforge.net/">EasyTAG</a>. Mas
+não
+há nenhuma forma simples para sincronizar seu aparelho com o computador
+anfitrião sem instalar o Amarok e os arquivos KDE de que ele depende.</p>
+            <h4><a name="Is_there_a_way_to_interact_with_a"></a> Existe
+uma maneira de interagir com uma câmera digital? </h4>
+            <p>O método mais fácil é simplesmente tratá-la como um
+dispositivo de armazenamento através de um leitor de cartão USB. Então
+quando você conectá-la ao computador ela será montada e estará
+disponível
+como uma entrada no diretório /media. Você pode clicar em <strong>Menu
+-&gt; Home</strong> para examinar e mover ou excluir o conteúdo ou
+em <strong>Menu -&gt; Aplicativos -&gt; Gráficos</strong> e
+optar por abrir o <a href="http://gphoto.sourceforge.net/proj/gtkam/">Gtkam</a>
+ou o <a href="http://ufraw.sourceforge.net/">UFRaw</a> ou o <a
+ href="http://geeqie.sourceforge.net/">Geeqie</a> para manipular suas
+imagens com o programa de sua escolha.</p>
+<h4><a name="How_do_I_install_nvidiaAti_driver_for"></a>Como faço para instalar o driver da nVidia/ATI no antiX? </h4>
+            <p>A melhor maneira de fazer isso é através do script <a
+ href="#smxi">smxi.</a></p>
+            <h4><a name="Can_I_use_a_webcam_"></a> Posso usar uma
+webcam? </h4>
+            <p>Muitas webcams funcionarão com o antiX, veja a discussão
+na <a href="http://www.mepis.org/docs/en/index.php/Webcam_Overview">Wiki
+do
+Mepis.</a></p>
+            <p>A <span style="font-style: italic;">Cabine de webcam do
+Cheese</span> está localizada em <strong>Aplicativos
+-&gt; Multimídia -&gt; Cheese.</strong></p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_operation-iwm"><u>IceWM: operação básica</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Onde estão os meus arquivos?</h4>
+            <p>Como em todas as versões do Linux, os arquivos pessoais
+estão localizados no antiX por padrão no diretório /home do <a
+ href="http://www.mepis.org/docs/en/index.php/File_system">sistema de
+arquivos Linux.</a></p>
+            <h4>Como são geridos os arquivos?</h4>
+O antiX possui dois gerenciadores de arquivos com interface gráfica. Um
+deles é o PCManFM, que pode ser aberto clicando no ícone <span
+ style="font-weight: bold;">Home</span> da barra de ferramentas ou por <span
+ style="font-weight: bold;">Menu -&gt; Home</span>.<br>
+            <p>O outro é o ROX-Filer, encontrado em <strong>Menu
+-&gt; Ferramentas -&gt; Arquivos -&gt; ROX</strong>. Ele é
+um gerenciador de
+arquivos que está no coração do ambiente de trabalho ROX <a href="#ROX">(ver
+a
+seção
+ROX).</a> Ele se abre no seu diretório
+home, onde você poderá mudar a visão para incluir arquivos ocultos do
+sistema clicando no ícone de olho na barra de menus. Clique com o botão
+direito
+do mouse em um arquivo para ver as opções de gestão. Entre elas está <span
+ style="font-style: italic;">Opções...</span>, que gere a configuração
+do
+ROX.<br>
+            </p>
+            <p>Para um gerenciador de arquivos em modo texto,
+clique em <strong>Menu -&gt; Ferramentas -&gt; Sistema de arquivos
+-&gt; MC,</strong> que abre o <a href="http://www.ibiblio.org/mc/">Midnight
+Commander,</a> cuja
+interface principal é composta por dois painéis mostrando o sistema de
+arquivos com os comandos numerados na parte inferior. Pressione <strong>F1</strong>
+para obter ajuda.</p>
+            <h4><a name="Posso_sincronizar_arquivosdiretórios_no"></a>Posso
+sincronizar
+arquivos/diretórios
+no
+antiX?<br>
+            </h4>
+            <span style="font-weight: bold;">Central de controle -&gt;
+Discos -&gt; Sincronizar Diretórios</span> ou <span
+ style="font-weight: bold;">Menu -&gt; Aplicativos -&gt; Ferramentas
+-&gt; <a href="http://www.opbyte.it/grsync/">Grsync</a></span>.<br>
+            <h4>E se eu precisar editar um arquivo de texto? </h4>
+            <p>Você tem cinco boas opções no antiX, desde as mais leves
+ou simples até as com mais recursos. Duas estão
+disponíveis clicando em <strong>Menu -&gt; Ferramentas -&gt; Editores
+de texto.</strong></p>
+            <p>1) O <a href="http://www.nano-editor.org/">Nano</a> é
+um
+aplicativo de linha de comando executado por teclas de controle
+listadas na parte inferior da tela. Pressione <strong>Ctrl-G</strong>
+para acessar o arquivo de ajuda.</p>
+            <p>2) O <a href="http://www.nllgg.nl/Ted/">Ted</a> foi
+projetado para tornar possível a edição de documentos tipo <span
+ style="font-style: italic;">rich text</span> em
+Unix/Linux de um modo WYSIWYG. Arquivos RTF do Ted são totalmente
+compatíveis com o MS-Word. Além disso, o Ted também é um conversor de
+RTF para
+PostScript e de RTF para Acrobat PDF.</p>
+            <p>3) Para chegar ao Leafpad clique em <strong>Menu -&gt;
+Aplicativos -&gt; Acessórios -&gt;</strong> <a
+ href="http://tarot.freeshell.org/leafpad/">Leafpad</a>. Ele é um
+aplicativo simples que inclui características essenciais e usa menus
+familiares.<br>
+            </p>
+            <p>4) O <a href="http://www.geany.org/">Geany</a> (<span
+ style="font-weight: bold;">Menu -&gt; Aplicativos
+-&gt; Desenvolvimento -&gt; Geany</span>) possui reconhecimento de
+linguagens de programação e portanto é adequado ao desenvolvimento de
+aplicativos.<br>
+            </p>
+            <p>5) O <a href="http://www.abisource.com/">AbiWord</a> é
+o processador de texto da suíte de escritório do Gnome. Ele é
+multiplataforma, compatível com uma grande variedade de formatos de
+arquivo e extensível por plugins.<br>
+            </p>
+            <p>Além disso, você pode abrir qualquer texto para edição
+nos gerentes de arquivos ROX, MC e PCManFM, este último no mesmo
+local do menu que o Leafpad.</p>
+
+<h4><a name="What_if_a_file_is_compressed_in_some_tar"></a>E se um arquivo é compactado em algum formato como .tar etc.? </h4>
+            <p>Clique em <strong>Menu -&gt; Aplicativos -&gt;
+Acessórios -&gt;</strong> e abra <a
+ href="http://xarchive.sourceforge.net/">XArchive Manager,</a> migre
+para o
+local do arquivo, selecione o arquivo e clique em <strong>Extrair</strong>
+na barra de ícones.</p>
+            
+<h4 id="install-1"><a name="How_do_I_install_and_manage_software_"></a> Como faço para instalar e gerenciar software? </h4>
+<p>Há uma série de <a href="http://www.mepis.org/docs/en/index.php/Installing_Software"> métodos de gerenciamento de software no antiX,</a> os mais comuns são a aplicação de linha de comando <a href="http://pt.wikipedia.org/wiki/Advanced_Packaging_Tool">apt</a> e a sua interface gráfica <a href="http://www.nongnu.org/synaptic/">Synaptic.</a></p>
+            <ol>
+              <li>Para chegar ao apt, <strong>Menu -&gt;
+Terminal</strong> e torne-se root <em>(su</em> seguido por senha
+de root) ou <span style="font-weight: bold;">Menu -&gt; Aplicativos
+-&gt; Acessórios -&gt; Root Terminal</span> (<span
+ style="font-style: italic;">man apt</span> para instruções completas
+sobre seu uso). Para a configuração e uso veja a <a
+ href="http://www.mepis.org/docs/en/index.php/Installing_software#Using_apt-get">Wiki
+do
+MEPIS</a> ou o <a href="http://www.debian.org/doc/manuals/apt-howto/">APT
+Howto.</a></li>
+              <li>Para chegar ao Synaptic, que às vezes é mais fácil
+para um novato, chame-o com <span style="font-style: italic;">gksu
+synaptic</span> numa janela de execução ( <span
+ style="font-weight: bold;">Menu -&gt; Executar...</span> ou
+pressionando as teclas <span style="font-weight: bold;">Super + barra
+de espaço</span>). Ele também é encontrado na <strong>CC</strong> <strong>-&gt;
+Sistema
+-&gt;
+Gerenciar
+Pacotes</strong><em>.</em>
+Instruções detalhadas podem ser encontradas na <a
+ href="http://www.mepislovers.org/forums/user_manual8/index.html#section07-2">Seção
+7.2
+do
+Manual
+do
+Usuário
+do
+MEPIS
+8.0.</a></li>
+              <li>Para a atualização de todo o sistema, instalação e
+remoção de certos grupos de aplicativos, instalação de drivers de vídeo
+e outras coisas mais, pode-se usar o <a href="#smxi">smxi</a>
+(fundamental se os repositórios do Debian sid estiverem habilitados).<br>
+              </li>
+            </ol>
+            <h4><a name="Como_atualizo_o_sistema"></a>Como atualizo o
+sistema?</h4>
+Antes de atualizar o sistema ou instalar novos aplicativos pela
+primeira vez é necessário atualizar a base de dados dos pacotes. Abra o
+Synaptic (veja acima) e clique no botão <span
+ style="font-style: italic;">Recarregar</span> ou abra um terminal como
+root (<span style="font-weight: bold;">Menu -&gt; Aplicativos -&gt;
+Acessórios -&gt; Root Terminal</span>) e<br>
+            <pre>apt-get update</pre>
+<span style="text-decoration: underline;">Não utilize</span> o Synaptic para uma atualização do sistema, para isso será preciso usar o terminal, seja com o APT, o <a href="http://algebraicthunk.net/%7Edburrows/projects/aptitude/">Aptitude</a> ou o <a href="#smxi">smxi</a>. O antiX é baseado no <a href="https://www.mepis.org/">MEPIS</a> que por sua vez é baseado no <a href="http://www.br.debian.org/"> Debian</a>, mas diferentemente do MEPIS, o antiX é construído sobre os repositórios do Debian 'testing'. Portanto para atualizar o sistema, num terminal como root:<br>
+            <pre>apt-get dist-upgrade</pre>
+Se houverem mensagens de erro durante a atualização, veja se encontra a
+solução nos fóruns do antiX em <a href="http://antix.freeforums.org">http://antix.freeforums.org</a>
+ou em <a href="http://www.mepislovers.org/forums/forumdisplay.php?f=40">Mepislovers</a>.
+Se necessário, abra um novo tópico para esclarecer a sua dúvida.<br>
+            <br>
+Para informações sobre o uso e recursos do APT, digite num terminal <span
+ style="font-style: italic;">man apt</span>. Aproveite e explore também
+            <span style="font-style: italic;">man apt-get</span>, <span
+ style="font-style: italic;">man apt-cache</span>, <span
+ style="font-style: italic;">man sources.list</span> etc.<br>
+            <h4><a name="Depois_de_instalar_novos_programas_como_"></a>Depois
+de
+instalar
+novos
+programas
+como
+faço
+para
+encontrá-los
+e
+como
+faço para pô-los no menu?</h4>
+            <ol>
+              <li><strong>Menu -&gt; Área de trabalho -&gt; IceWM -&gt;
+Atualizar menu (auto)</strong> irá automaticamente atualizar o seu menu
+e
+colocar nele os novos programas.<span style="font-weight: bold;"></span></li>
+              <li><strong>Menu -&gt; Área de trabalho -&gt; IceWM -&gt;
+Editar menu (manual)</strong> abrirá o programa IceMC, um editor
+de menus gráfico (em inglês) para o IceWM, projetado para ser simples e
+estável.
+Clique em <span style="font-style: italic;">Open File</span> e abra <span
+ style="font-style: italic;">menu</span>. Você pode configurar as
+entradas de menu com copiar, colar e arrastar e soltar. Familiarizar-se
+com a organização do arquivo ~/.icewm/menu facilita a compreensão e o
+uso do IceMC.<br>
+              </li>
+            </ol>
+            <h4><a name="How_can_I_get_my_email_"></a> Como posso obter
+o meu e-mail? </h4>
+            <p>Abra <strong>Menu -&gt; Aplicativos -&gt; Rede
+-&gt; Iceape Mail &amp; Newsgroups</strong>. Você entra no setup,
+seguindo o assistente que aparece a primeira vez que utilizar o
+aplicativo ou a qualquer momento ao clicar na barra de menus em <strong>Configuration
+-&gt;
+Create
+new
+account...</strong> e preenchendo os
+espaços em branco com as informações de sua conta de e-mail. </p>
+            <h4><a name="What_does_antiX_offer_for_web_browsing_"></a>O
+que o antiX oferece para navegar na Internet? </h4>
+            <p>O navegador padrão é o completo <a
+ href="http://en.wikipedia.org/wiki/Iceweasel">Iceape,</a> a versão do
+Debian para o Seamonkey livre de marcas registradas. Clique em <strong>Menu
+-&gt;
+Navegador</strong> ou no ícone da barra de ferramentas para lançá-lo.
+Ele é compatível com muitas extensões feitas para o Firefox. Veja <a
+ href="https://addons.mozilla.org/pt-BR/seamonkey/">aqui</a>.<br>
+            </p>
+            <p>Dois outros navegadores leves também estão incluídos em <strong>Menu
+-&gt;
+Aplicativos
+-&gt;
+Rede.</strong> O <a href="http://www.dillo.org/">Dillo</a>
+é um rápido e minimalista navegador multiplataforma que é altamente
+seguro, enquanto o <a href="http://links.twibright.com/">navegador
+Links2</a> é
+um navegador web modo texto e gráfico que também é muito rápido e
+seguro e tem menus disponíveis clicando-se na barra superior.<br>
+            </p>
+            <p>Também pode-se lançar o script <span
+ style="font-style: italic;">exoodles</span> como root e ele oferece,
+entre outras opções de multimídia, a instalação dos navegadores <a
+ href="http://www.google.com.br/chrome">Google
+Chrome</a>, <a href="http://www.opera.com/">Opera</a> e <a
+ href="http://getswiftfox.com/">Swiftfox</a>.<br>
+            </p>
+            <h4><a name="Can_I_chat_with_antiX_"></a> Posso bater papo
+com o
+antiX? </h4>
+            <p>Existem três programas de chat que vêm instalados no
+antiX, os dois primeiros estão localizados em <strong>Menu -&gt;
+Aplicativos -&gt; Rede</strong> </p>
+            <ol>
+              <li>O Chatzilla é um programa de <a
+ href="http://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a>
+simples. Preencha as informações de conexão e você está pronto
+para papear. Se precisar de ajuda, consulte as <a
+ href="http://chatzilla.hacksrus.com/faq/">FAQ.</a></li>
+              <li>O <a href="http://www.pidgin.im/">Pidgin</a> (antes
+chamado Gaim) inicia um cliente de mensagens
+instantâneas multiprotocolo que lhe permite usar todas as suas contas
+de mensageiros ao mesmo
+tempo. A configuração é intuitiva e se precisar de ajuda pode verificar
+                <a href="http://developer.pidgin.im/wiki/FAQ">estas
+perguntas mais
+frequentes.</a> </li>
+              <li>Finalmente, clicando em <strong>Menu -&gt; CLI -&gt;
+Rede -&gt; Bate-papo</strong> abre-se um rápido e muito capaz <a
+ href="http://www.irssi.org/">cliente de IRC</a> em modo texto. A
+configuração e o uso não são óbvios, portanto não deixe de verificar <a
+ href="http://www.irssi.org/documentation">a documentação do Irssi.</a></li>
+            </ol>
+            <h4><a name="What_can_I_use_to_burn_a_CDDVD_"></a> O que
+posso usar para gravar um CD/DVD? </h4>
+            <p>Para uma interface gráfica clique em <strong>Menu -&gt;
+Aplicativos -&gt; Multimídia -&gt; GnomeBaker CD/DVD Writer</strong>.<br>
+Para um aplicativo em modo texto <span style="font-weight: bold;">Menu
+-&gt; CLI -&gt; Multimídia -&gt; Queimador de cd -cli</span> irá
+executar o <a href="http://cdw.sourceforge.net/">cdw</a>.<br>
+            </p>
+            <h4><a name="What_do_I_use_for_a_news_RSS_reader_"></a> O
+que eu uso como um agregador de notícias (RSS)? </h4>
+            <p>Você tem algumas boas opções:</p>
+            <ol>
+              <li>Use um agregador online como o <a
+ href="http://www.bloglines.com/">Bloglines</a> que você acessa através
+de um navegador.</li>
+              <li>Use <strong>Menu
+-&gt; </strong><strong>Aplicativos -&gt; Rede -&gt; Iceape
+Mail &amp; Newsgroups</strong>. É bastante
+intuitivo de usar. </li>
+              <li>Instalar um agregador de desktop a partir dos
+repositórios (use o Synaptic e pesquise sobre alimentação de RSS).</li>
+              <li><strong>Menu -&gt; CLI -&gt;
+Rede -&gt; Leitor de RSS/Atom</strong> lança o aplicativo CLI
+Newsbeuter.<br>
+              </li>
+            </ol>
+            <h4 id="music-1"><a name="How_do_I_play_music_"></a> Como
+faço para tocar música? </h4>
+            <p>Para reproduzir um CD de áudio ponha-no em seu CD player
+e (não há autoplay) clique em <strong>Menu -&gt; Aplicativos -&gt;
+Multimídia - &gt; xmms.</strong>
+Isso abre o <a href="http://www.xmms.org/">XMMS,</a> um player
+multimídia para sistemas <a href="http://en.wikipedia.org/wiki/Unix">Unix.</a>
+Clique no botão avançar (segundo da esquerda) para iniciar o CD. Na
+primeira vez será necessário navegar até&nbsp; diretório /media/cdrom
+(nota: ../ significa o diretório superior) e adicionar as
+faixas que se deseja ouvir. </p>
+            <p>Você pode selecionar uma fonte diferente de arquivos de
+áudio para tocar no XMMS. Para fazer isso, dê um clique com o botão
+direito na barra superior do player XMMS e do menu pop-up selecione <span
+ style="font-style: italic;">Play File</span> para selecionar o
+arquivo de áudio para tocar. Para reproduzir um áudio MP3 ou arquivo <a
+ href="http://www.vorbis.com/">Ogg Vorbis</a> simplesmente
+clique sobre ele e o XMMS abre automaticamente e começa a tocar o
+arquivo.</p>
+            <p>Há também um mixer disponível na<strong> Central de
+controle -&gt; Hardware -&gt; Ajustar Misturador</strong>
+ou clicando no ícone Volume na barra de tarefas e em seguida no ícone
+MIXER. A aplicação é o <a href="http://alsa.opensrc.org/Alsamixer">AlsaMixer</a>.<br>
+            </p>
+            <p>Se você quiser um player no terminal para as
+suas músicas no disco rígido, abra <span style="color: rgb(0, 0, 0);"><span
+ style="color: rgb(255, 0, 0);"><span
+ style="color: rgb(0, 0, 0); font-weight: bold;">Menu -&gt; CLI
+-&gt; Multimídia -&gt;</span> <a href="http://moc.daper.net/about">Cliente
+de
+música
+-
+moc.</a></span></span><br>
+            </p>
+            <h4><a name="What_about_playing_music_from_an"></a> E sobre
+a reprodução de música de uma fonte na Internet? </h4>
+            <p>Se você quiser reproduzir um arquivo de
+áudio da Internet, abra o XMMS, escolha <em>Play Location</em> e
+informe o endereço do arquivo na Internet (URL).</p>
+            <p>Alternativamente você pode usar o <strong>Menu -&gt;
+Aplicativos -&gt; Multimídia -&gt;</strong> <a
+ href="http://www.nongnu.org/streamtuner/">streamtuner,</a> que
+oferece centenas de milhares de músicas em uma interface familliar
+fácil e limpa. </p>
+            <p>Um gerente de músicas muito bom também está instalado: <a
+ href="http://freshmeat.net/projects/gogglesmm">Goggles Music Manager</a>.<br>
+Citando o site do programa, "O Goggles Music Manager é um gerenciador
+de
+coleções
+de música e tocador que automaticamente classifica arquivos Ogg Vorbis,
+FLAC,
+MP3, MP4, ASF e Musepack com base em gênero, artista, álbum e
+canção. Ele suporta reprodução contínua (sem silêncios), fácil edição
+de etiquetas e permite scrobbling (log automático) de faixas para o
+last-fm."</p>
+            <h4><a name="Can_I_rip_music_with_antiX"></a> Posso extrair
+música com o antiX?</h4>
+            <p>Para um aplicativo CLI, <strong>Menu -&gt; CLI -&gt;
+Multimídia -&gt; Ripador</strong> lançará RipIT v3.8.0. </p>
+            <p>Para uma GUI, <strong>Menu -&gt; Aplicativos -&gt;
+Multimídia -&gt; Asunder CD Ripper.</strong> Esse aplicativo pode
+gravar
+faixas de um CD de áudio como WAV, MP3, OGG, FLAC e/ou WavPack.<br>
+            </p>
+            <p>Há também outro aplicativo CLI no antiX chamado <a
+ href="http://www.andrews-corner.org/abcde.html">abcde.</a> </p>
+            <h4><a name="O_DVD_do_filme_que_eu_coloquei_não_posso"></a>O
+DVD
+do
+filme
+que
+eu
+coloquei
+não
+funcionou.
+Como
+posso
+assistir
+aos
+filmes?
+
+
+
+
+
+
+
+
+            </h4>
+            <p>Não há recurso de execução automática, então após
+colocar o seu DVD ele poderá ser reproduzido usando o <a
+ href="http://www.xine-project.org/home">gxine</a>, o xine,
+o GNOME MPlayer ou o <a
+ href="http://www.mplayerhq.hu/design7/news.html">MPlayer</a>.<br>
+            </p>
+            <p><span style="font-weight: bold;">Menu -&gt;
+Aplicativos -&gt; Multimídia -&gt; GNOME MPlayer</span>:
+navegue por <span style="font-weight: bold;">Arquivo -&gt; Disco</span>
+para iniciar a reprodução.<br>
+            </p>
+            <p><span style="font-weight: bold;">Menu -&gt; Aplicativos
+-&gt; Multimídia -&gt; MPlayer Media Player</span>: clique com o botão
+direito sobre o programa aberto e em <span style="font-weight: bold;">Open...
+-&gt;
+Play
+DVD</span>.<br>
+            </p>
+            <p>Outras opções são <strong style="font-weight: normal;"><span
+ style="font-weight: bold;">Menu
+-&gt; Aplicativos
+-&gt; Multimídia -&gt; gxine</span>
+ou <span style="font-weight: bold;">xine</span></strong>.
+Eles procuram pelo DVD em /dev/dvd. Como o antiX pode identificar o seu
+gravador de DVD por um outro dispositivo, verifique se /dev/dvd existe
+e se não existir crie uma ligação simbólica do seu dispositivo de DVD
+para /dev/dvd (use o gerente de arquivos ROX como root para isso).</p>
+            <p>Também pode ser útil verificar para qual região o DVD
+está configurado. No gxine: <span style="font-weight: bold;">File
+-&gt; Configure -&gt; Preferences... -&gt; media -&gt; dvd</span>. No
+xine clique com o botão direito na tela e <span
+ style="font-weight: bold;">Settings -&gt; Setup... -&gt; media</span>.<br>
+            </p>
+            <p>O MPlayer também pode ser usado para a reprodução de
+DVDs ao ser
+lançado pela linha de comando (ver <span style="font-style: italic;">man
+mplayer</span> para mais informações).<br>
+            </p>
+            <p>Para reproduzir um arquivo de vídeo (por exemplo, AVI,
+MPEG etc.), simplesmente clique sobre ele e o GNOME mplayer ou o
+MPlayer será
+aberto automaticamente e iniciará a reprodução do arquivo. Quando
+aberto com o MPlayer, use a tecla <span style="font-style: italic;">p</span>
+ou de <span style="font-style: italic;">espaço</span> para pausar o
+filme, qualquer tecla para reiniciá-lo e <span
+ style="font-style: italic;">q</span> ou <span
+ style="font-style: italic;">Esc</span> para parar a reprodução e
+fechar o programa (mais detalhes pelo comando <span
+ style="font-style: italic;">mplayer --help</span>).<br>
+            </p>
+            <h4>Que aplicativos o antiX oferece na área de criação?<br>
+            </h4>
+            <p>Alguns dos que se encaixam nessa classificação são o
+criador de apresentações de slides <a
+ href="http://imagination.sourceforge.net/index.html">Imagination</a>
+(no submenu <span style="font-weight: bold;">Multimídia</span>), o
+editor de áudio <a href="http://gna.org/projects/mhwaveedit">mhWaveEdit</a>
+(<span style="font-weight: bold;">Multimídia</span>), o
+seletor de cores <a href="http://gcolor2.sourceforge.net/">Gcolor2</a>
+(<span style="font-weight: bold;">Gráficos</span>),
+o conversor de <a href="http://pt.wikipedia.org/wiki/RAW_%28formato%29">imagens
+RAW</a> <a href="http://ufraw.sourceforge.net/">UFRaw</a> (<span
+ style="font-weight: bold;">Gráficos</span>),
+o visualizador e manipulador de imagens <a
+ href="http://geeqie.sourceforge.net/">Geeqie</a> (<span
+ style="font-weight: bold;">Gráficos</span>) e o editor de imagens <a
+ href="http://mtpaint.sourceforge.net/">mtPaint</a> (<span
+ style="font-weight: bold;">Gráficos</span>).<br>
+            <br>
+            </p>
+            <h4><a name="Is_there_a_screensaver_"></a> Existe um
+protetor de tela? </h4>
+            <p>Sim, o padrão é uma tela preta, com ou sem bloqueio.
+Alternativamente use a opção de bloqueio pelo ícone Sair ou por <span
+ style="font-weight: bold;">Menu -&gt; Sair... -&gt; Bloquear estação</span>.
+Se
+você
+quiser,
+pode
+adicionar
+o
+xscreensaver
+pelo
+Synaptic
+ou,
+naturalmente,
+pela
+linha
+de
+comando.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <h4>Como faço para manipular uma janela aberta?</h4>
+            <p>Além das operações padrão com os três botões no canto
+superior direito (em alguns temas acrescidos pelo enrolar/desenrolar),
+outras possibilidades (ícone na bandeja, camadas etc.)
+estão disponíveis através do botão direito do mouse na barra de título.
+Um clique duplo na barra de título restaura/maximiza a janela. Você
+também pode
+redimensioná-la arrastando o canto inferior direito.</p>
+            <h4><a name="What_applications_are_available_for_use"></a>Quais
+aplicativos
+estão
+disponíveis
+para
+uso
+em
+escritório?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </h4>
+            <p>Todos os aplicativos de escritório são encontradas sob <strong>Menu
+-&gt;
+Aplicativos
+-&gt;
+Escritório.</strong> O antiX vem
+com a planilha leve <a href="http://www.gnome.org/projects/gnumeric/">Gnumeric</a>
+e um processador de textos também relativamente leve chamado <a
+ href="http://www.abisource.com/">AbiWord.</a> Ambos são capazes de
+abrir arquivos do MS-Office. Para uma
+maior funcionalidade, instale o <a
+ href="http://www.openoffice.org/product/">openoffice.org</a> dos
+repositórios após certificar-se de que há espaço suficiente no disco
+rígido.</p>
+            <p>Outros aplicativos de escritório incluem um leitor de
+PDF,
+uma calculadora e um gerenciador de informações pessoais chamado <a
+ href="http://clay.ll.pl/osmo/">Osmo.</a> </p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_customization-iwm"><u>IceWM:
+personalização básica<br>
+                  </u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Como se personaliza o IceWM? </h4>
+            <p>É feito editando diretamente os arquivos de
+configuração. Para isso abra <strong>Central de controle -&gt; Área de
+Trabalho -&gt; Configurar IceWM.</strong><br>
+            </p>
+            <span style="color: rgb(255, 0, 0);"><span
+ style="color: rgb(0, 0, 0);">Para alterar as preferências do IceWM
+vá para <span style="font-weight: bold;">Menu -&gt; Área de trabalho
+-&gt;
+IceWM -&gt; Central de controle IceWM</span>. Lá você pode ajustar a
+barra
+de tarefas, applets, áreas de trabalho e janelas. </span></span><span
+ style="color: rgb(0, 0, 0);">Nota: para editar o
+menu, veja <a href="#Depois_de_instalar_novos_programas_como_">aqui</a></span>.<span
+ style="color: rgb(0, 0, 0);"><span style="color: rgb(255, 0, 0);"></span></span>
+            <h4>O que eu posso mudar?</h4>
+            <p>Você pode alterar o que quiser, seguindo as orientações
+do <a href="http://www.icewm.org/manual/icewm.html">Manual do IceWm.</a>
+            </p>
+            <h4>Quais são as mudanças mais comuns que se faz no
+painel? </h4>
+            <p>Vamos nos concentrar em quatro alterações comuns para o
+que você vê e como ele funciona. Abra o gerente de arquivos ROX como
+descrito
+anteriormente, clique no olho para exibir os arquivos ocultos, clique
+em .icewm e, finalmente, em <span style="font-style: italic;">preferences</span>
+para abrir esse arquivo em um
+editor de texto. Quando você terminar com as alterações, salve e saia.
+Elas terão efeito na próxima vez que você se autenticar no IceWM ou
+reiniciá-lo: <strong>Menu -&gt; Sair... -&gt; Reiniciar IceWM.</strong>
+            </p>
+            <p>1) Mudar para um relógio de 12 horas: procure (Ctrl+F):</p>
+            <pre>timeformat</pre>
+            <p>e deixe assim:</p>
+            <pre>TimeFormat="% I:% M"</pre>
+            <p>Note que a linha foi descomentada e o texto entre aspas
+foi alterado.</p>
+            <p>2) Variação do número de espaços de trabalho: procure
+(Ctrl+F):</p>
+            <pre>workspacenames</pre>
+            <p>Altere a entrada como preferir; por exemplo, pode-se ler:</p>
+            <pre>WorkspaceNames=" 1 "," 2 "</pre>
+            <p>3) Fazer com que o ícone do correio funcione: procure
+(Ctrl+F):</p>
+            <pre>mailbox</pre>
+            <p>Altere a entrada abaixo para:</p>
+            <pre>MailCommand="seu programa de correio"</pre>
+            <p>Novamente, observe que a linha foi descomentada e o
+texto
+entre aspas foi alterado.</p>
+            <p>4) Habilitar a ocultação automática do painel: procure
+(Ctrl+F):</p>
+            <pre>autohide</pre>
+            <p>Altere a linha abaixo para ler:</p>
+            <pre>TaskBarAutoHide=1 # 0 / 1</pre>
+            <p>Note que a linha foi descomentada e o valor alterado
+para "1"
+(verdadeiro).</p>
+            <h4>Como faço para mudar o menu e a barra de ferramentas?</h4>
+            <p>Você pode fazê-lo da mesma forma que com <strong
+ style="font-weight: normal; font-style: italic;">preferences</strong>,
+editando os arquivos <span style="font-style: italic;">menu</span> e <span
+ style="font-style: italic;">toolbar</span> ou você pode usar o
+aplicativo <em>IceMC</em> via <span style="font-weight: bold;">Menu
+-&gt; Área de trabalho -&gt; IceWM -&gt; Editar menu (manual)</span>.<br>
+            <span style="font-style: italic;"> </span></p>
+            <h4>E quanto aos atalhos de teclado?</h4>
+            <span style="font-weight: bold;">Central de controle -&gt;
+Área de trabalho -&gt; Configurar IceWM -&gt; keys</span>. A sintaxe é
+bem simples. "Alt+Ctrl" equivale à tecla "Super".<br>
+            <h4><a name="Como_faço_para_mudar_o_fundo_de_tela_"></a>Como
+faço
+para
+mudar
+o
+fundo
+de tela? </h4>
+            <p> Via <strong>Central de controle -&gt; Área de Trabalho
+-&gt;
+Escolher Tema de Fundo.</strong> Observação: você pode definir uma
+imagem diferente
+para cada GJ!<br>
+            </p>
+            <p>Você ainda pode usar para isso os mesmos aplicativos que
+usa para gerir os ícones na área de trabalho: ROX, PCManFM ou iDesk.<br>
+            </p>
+            <p>Para configurar o fundo de tela com o ROX, veja <a
+ href="#Como_fa%C3%A7o_para_alterar_o_papel_de_parede">aqui</a>.<br>
+            </p>
+            <p>Para o PCManFM, abra <span style="font-weight: bold;">Menu
+-&gt;
+Área
+de
+trabalho
+-&gt;
+Configuração -&gt; Ícones PCManFM</span> e
+marque a caixa <span style="font-style: italic;">Papel de parede</span>.<br>
+            </p>
+            <p>Para usar o iDesk, abra-o em <span
+ style="font-weight: bold;">Menu -&gt; Área de trabalho -&gt;
+Configuração -&gt; Ícones IDesk</span> ou pela <span
+ style="font-weight: bold;">CC -&gt; Área de Trabalho -&gt; Gerenciar
+Ícones idesk</span>, clique em <span style="font-style: italic;">preferências</span>
+e adicione as linhas abaixo após a linha 'table Config':<br>
+            </p>
+            <pre>&nbsp; Background.File: image.jpg<br>&nbsp; Background.Delay: 1<br>&nbsp; Background.Source: ~/Wallpaper<br>&nbsp; Background.Mode: Scaled<br>&nbsp; Background.Color: #C2CCFF</pre>
+            <p>As configurações acima farão com que as imagens em
+~/Wallpaper se alternem a cada 1 minuto como fundo de tela. Para mudar
+a periodicidade (em minutos), alterne o valor de 'Background.Delay:'.
+Se você quiser apenas uma imagem fixa, ponha o seu caminho na linha
+'Background.File:'
+e deixe 'Background.Source:' vazio. Para mais informações, veja <a
+ href="http://idesk.sourceforge.net/wiki/index.php/Idesk-usage#For_Background_support_.28after_0.7.5_version_it_will_be_optional.29">aqui</a>.<br>
+            </p>
+            <p>Se você optar por usar o ROX, o PCManFM ou o iDesk para
+o gerenciamento do fundo de tela ao invés do programa padrão no antiX
+que é o <a href="http://projects.l3ib.org/nitrogen/">Nitrogen</a>,
+descomente as suas respectivas linhas em ~/.icewm/startup (no exemplo
+abaixo estamos habilitando o iDesk)<br>
+            </p>
+            <pre>## Set desktop icons<br>#pcmanfm -d &amp;<br>idesk &amp;<br>#rox --pinboard=antiX &amp;<br></pre>
+            <p>e comente as linhas do nitrogen<br>
+            </p>
+            <pre>## Set wallpaper via nitrogen<br>#rm $HOME/.config/nitrogen/bg-saved.cfg<br>#ln -s $HOME/.config/nitrogen/bg-saved-icewm.cfg $HOME/.config/nitrogen/bg-saved.cfg <br>#nitrogen --restore &amp;<br></pre>
+            <p>Se você usar o ROX ou o PCManFM, será preciso editar
+~/.conkyrc (<span style="font-weight: bold;">CC -&gt; Sistema -&gt;
+Editar Conky</span>) se quiser visualizar o <a href="#conky">Conky</a>.
+Mude
+'own_window
+no'
+para
+'own_window
+yes'.<br>
+            </p>
+            <h4>Como faço para desativar o Conky?</h4>
+            <p> Clique em <strong>Menu -&gt; Área de trabalho -&gt;
+Configuração -&gt; Conky lig./desl.</strong></p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Advanced-iwm"><u>IceWM: avançado</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 id="compression_utility">Existe um utilitário de
+compressão? </h4>
+            <p>Clique em <strong style="font-weight: bold;">Menu -&gt;
+Aplicativos -&gt;
+Acessórios</strong><span style="font-weight: bold;"> -&gt;</span> <a
+ href="http://xarchive.sourceforge.net/">Xarchive Manager,</a>
+um invólucro simples para quaisquer ferramentas que estejam instaladas
+como
+tar, rpm, zip, etc.</p>
+            <h4 id="other_styles_available"><a
+ name="Existem_outros_temas_disponíveis_"></a>Existem outros temas
+disponíveis? </h4>
+            <p>Um monte! Verifique em <span style="font-style: italic;">Bookmarks&gt;antiX-Linux&gt;Box-Look</span>
+no menu do Iceape. </p>
+            <h4>Que outras personalizações posso considerar? </h4>
+            <p>Quase tudo o que quiser. Novamente, o Manual do Usuário
+do IceWM é o melhor guia. </p>
+            <h4 id="development-tools">Existe alguma ferramenta de
+desenvolvimento no antiX? </h4>
+            <p>Uma boa seleção está disponível:</p>
+            <ol>
+              <li><strong style="font-weight: bold;">Menu -&gt;
+Aplicativos -&gt;
+Desenvolvimento</strong><span style="font-weight: bold;"> -&gt;</span> <a
+ href="http://geany.uvena.de/">Geany</a>
+é um editor de texto com as características básicas de um ambiente de
+desenvolvimento integrado (IDE).</li>
+              <li><strong>Menu -&gt; Ferramentas -&gt;
+Programação</strong> oferece o shell do <a
+ href="http://www.python.org/">Python,</a> bem como as ferramentas <a
+ href="http://www.tcl.tk/">Tcl / Tk</a>,Tclsh8.4 e
+TkWish8.4.</li>
+            </ol>
+            <h4><a name="What_other_system_tools_are_provided"></a> Que
+outras ferramentas do sistema são fornecidas?</h4>
+            <p><strong>Menu -&gt; Aplicativos -&gt;
+Ferramentas</strong> traz o <span style="font-style: italic;">System
+Profiler and
+Benchmark</span> (HardInfo) e o <a href="http://htop.sourceforge.net/">Htop,</a>
+um
+visualizador de processos interativo.</p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+<h3 id="Links-iwm"><u>IceWM: links</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <ul>
+<li><a href="http://www.icewm.org/">Página inicial do IceWM</a></li>
+<li><a href="http://www.icewm.org/manual/">Manual do Usuário do IceWM<br></a></li>
+<li><a href="http://forums.debian.net/viewtopic.php?t=5450">Uma boa postagem sobre configuração básica</a> </li>
+<li><a href="http://www.osnews.com/story/7774/IceWM_-_The_Cool_Window_Manager">IceWM - The Cool Window Manager</a></li>
+            </ul>
+            <br>
+            <hr>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td height="80" width="80" align="left"> <br>
+                  </td>
+                  <td valign="top" width="500" align="left">
+                  <h2 id="fluxbox">Fluxbox</h2>
+                  <ol
+ style="font-family: sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+                    <li><a href="#First_look-flux">Primeiro olhar</a></li>
+                    <li><a href="#Basic_configuration-flux">Configuração
+básica</a></li>
+                    <li><a href="#Basic_operation-flux">Operação básica</a></li>
+                    <li><a href="#Basic_customization-flux">Personalização
+básica</a></li>
+                    <li><a href="#Advanced-flux">Avançado</a></li>
+                    <li><a href="#Links-flux">Links</a></li>
+                  </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="First_look-flux"><u>Fluxbox: primeiro olhar</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Onde devo iniciar? Não vejo um botão Iniciar ou Menu.</h4>
+            <p>Clique com o botão direito do mouse em qualquer parte do
+desktop e use o menu para abrir qualquer aplicativo.</p>
+            <h4>O que é este ambiente trabalho? </h4>
+            <p>O ambiente de trabalho é executado pelo <a
+ href="http://fluxbox.org/">Fluxbox,</a> um gerenciador de janelas leve
+para <a href="http://pt.wikipedia.org/wiki/X_Window_System">o X Window
+System,</a> que fornece os recursos e funções da tela.</p>
+            <h4>Onde estão os ícones? </h4>
+            <p>O Fluxbox não usa ícones mas o antiX traz dois
+aplicativos que podem gerir ícones na
+sua área de trabalho: ROX e <a
+ href="http://idesk.sourceforge.net/wiki/index.php/Main_Page">iDesk</a>.<br>
+            <br>
+O ROX já vem pré-configurado com alguns ícones no antiX, abra-o em <span
+ style="font-weight: bold;">Menu -&gt; Área de trabalho -&gt; Área de
+trabalho -&gt; Quadro ROX lig./desl.</span>. Para maiores informações
+sobre o funcionamento do ROX-Desktop, inclusive o gerenciamento de
+ícones, <a href="#rox">veja a seção abaixo</a>.<br>
+            <br>
+Para usar o iDesk para isso, abra <span style="font-weight: bold;"></span>a
+
+
+
+
+            <span style="font-weight: bold;">Central de controle -&gt;
+Área de
+Trabalho -&gt; Gerenciar Ícones idesk</span>. Isso abre o tidesktool,
+que é uma
+interface gráfica para o iDesk e serve para criar os ícones desejados
+assim como para gerir o papel de parede (<a
+ href="#Como_fa%C3%A7o_para_alterar_o_papel_de">veja aqui</a>).<br>
+            <br>
+Nos dois casos acima é preciso habilitar os respectivos
+programas no arquivo ~/.fluxbox/startup para que iniciem
+automaticamente
+no início da sessão. Abra <span style="font-weight: bold;">CC -&gt;
+Configurar Fluxbox -&gt; startup</span> e
+descomente a linha do programa que tiver escolhido, seja o rox ou o
+idesk, abaixo da linha<br>
+            </p>
+            <pre>##Desktop icons<br></pre>
+            <h4>O que é aquela coisa no canto superior esquerdo?</h4>
+            <p>Essa é a saída do <a
+ href="http://conky.sourceforge.net/">Conky,</a> um monitor do
+sistema leve que fornece informações em tempo real sobre diversos
+aspectos
+do seu computador.</p>
+            <h4>E essa barra embaixo? </h4>
+            <p>Essa é chamada <em style="font-style: italic;">barra</em><span
+ style="font-style: italic;"> de </span><em style="font-style: italic;">tarefas</em>
+ou <em>painel</em> e ela exibe informações correntes como o espaço
+de trabalho, aplicações abertas, aplicações de fundo e a data/hora.</p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_configuration-flux"><u>Fluxbox:
+configuração básica</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Como faço para configurar uma conexão sem fio? </h4>
+            <p>Existem 3 opções, todas encontradas na Central de
+controle do antiX (CC): Wicd, rutilt e Ceni. Por favor, veja as <a
+ href="#wireless-icewm">instruções de conexão sem fio na seção IceWM.</a><br>
+            </p>
+            <h4>E quanto à conexão DSL? <a
+ href="#E_quanto_%C3%A0_conex%C3%A3o_DSL">(link para a resposta do
+IceWM)</a><br>
+            </h4>
+            <h4>E quanto à conexão discada? <a
+ href="#E_quanto_%C3%A0_conex%C3%A3o_discada">(link para a resposta do
+iceWM)</a><br>
+            </h4>
+            <h4>Como faço para configurar a impressão? <a
+ href="#How_do_I_set_up_printing_">(link para a resposta do IceWM) </a></h4>
+            <h4> Que tal um scanner? <a href="#What_about_a_scanner_">(link
+para
+a
+resposta
+do
+IceWM)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </a></h4>
+            <h4>Qual aplicativo devo usar para a configuração do
+sistema? <a href="#What_application_should_I_use_for_system"> </a><a
+ href="#What_application_should_I_use_for_system">(link para a resposta
+do
+IceWM)</a></h4>
+            <h4>Quero configurar o meu monitor - como posso fazer isso?
+            <a href="#I_want_to_configure_my_monitor--how_do_I"> </a><a
+ href="#I_want_to_configure_my_monitor--how_do_I">(link para a resposta
+do
+IceWM)</a></h4>
+            <h4>Existem outros Assistentes do MEPIS que eu deva saber? <a
+ href="#Are_there_any_other_MEPIS_Assistants"> </a><a
+ href="#Are_there_any_other_MEPIS_Assistants">(link para a resposta do
+IceWM)</a></h4>
+            <h4>Posso usar um leitor de MP3 como um iPod com o antiX? <a
+ href="#Can_I_use_a_MP3_player_such_as_an_iPod"> </a><a
+ href="#Can_I_use_a_MP3_player_such_as_an_iPod">(link para a resposta
+do
+IceWM)</a></h4>
+            <h4>Existe uma maneira de interagir com uma câmera digital?
+            <a href="#Is_there_a_way_to_interact_with_a"> </a><a
+ href="#Is_there_a_way_to_interact_with_a">(link para a resposta do
+IceWM)</a></h4>
+            <h4>Como faço para instalar o driver da nVidia/ATI no
+antiX? <a href="#How_do_I_install_nvidiaAti_driver_for"> </a><a
+ href="#How_do_I_install_nvidiaAti_driver_for">(link para a resposta do
+IceWM)</a></h4>
+            <h4>Posso usar uma webcam? <a href="#Can_I_use_a_webcam_">
+            </a><a href="#Can_I_use_a_webcam_">(link para a resposta do
+IceWM)</a></h4>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_operation-flux"><u>Fluxbox: operação
+básica</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Como faço para alterar o volume do som?</h4>
+Pressione a tecla <span style="font-style: italic;">Alt</span>, aponte
+o cursor do mouse sobre a área de trabalho e role a rodinha do mouse
+para cima ou para baixo.<br>
+            <h4>Onde estão os meus arquivos? </h4>
+            <p>Como em todas as versões do Linux, os arquivos pessoais
+estão localizados no antiX por padrão no diretório /home do <a
+ href="http://www.mepis.org/docs/en/index.php/File_system">sistema de
+arquivos Linux.</a></p>
+            <h4>Existe uma maneira fácil de encontrar um arquivo
+específico? </h4>
+            <p><strong>Menu -&gt; Sistema -&gt; Arquivos
+-&gt; Procurar</strong>. Os gerenciadores de arquivos ROX e PCManFM
+também estão localizados aí.</p>
+            <h4>Como são geridos os arquivos? </h4>
+            <p>Clique em <strong>Menu -&gt; Home</strong> para
+abrir um gerenciador de arquivos gráficos que está no coração do
+ambiente
+de trabalho ROX <a href="#ROX">(ver a seção ROX abaixo).</a> Ele se
+abre no seu diretório
+home, onde você poderá mudar a visão para incluir arquivos ocultos do
+sistema clicando no ícone de olho na barra de menus. Clique com o botão
+direito
+do mouse em um arquivo para ver as opções de gestão. Entre elas está <span
+ style="font-style: italic;">Opções...</span>, que gere a configuração
+do
+ROX.<br>
+            </p>
+            <p>Além dele há <span style="font-weight: bold;">Menu
+-&gt; Sistema -&gt; Arquivos -&gt; pcmanfm</span>.<br>
+            </p>
+            <p>Para um gerenciador de arquivos em modo texto,
+clique em <strong>Menu -&gt; Sistema -&gt; Arquivos
+-&gt; mc,</strong> que abre o <a href="http://www.ibiblio.org/mc/">Midnight
+Commander,</a> cuja
+interface principal é composta por dois painéis mostrando o sistema de
+arquivos com os comandos numerados na parte inferior. Pressione <strong>F1</strong>
+para obter ajuda.</p>
+            <h4>Posso sincronizar arquivos/diretórios no antiX? <a
+ href="#Posso_sincronizar_arquivosdiret%C3%B3rios_no">(link para a
+resposta do IceWM)</a><br>
+            </h4>
+            <h4>E se eu precisar editar um arquivo de texto? </h4>
+            <p>Você tem cinco boas opções no antiX, desde as mais leves
+ou simples até as com mais recursos. Duas estão
+disponíveis clicando em <strong>Menu -&gt; Sistema -&gt; Editores
+de texto.</strong></p>
+            <p>1) O <a href="http://www.nano-editor.org/">Nano</a> é
+um
+aplicativo de linha de comando executado por teclas de controle
+listadas na parte inferior da tela. Pressione <strong>Ctrl-G</strong>
+para acessar o arquivo de ajuda.</p>
+            <p>2) O <a href="http://www.nllgg.nl/Ted/">Ted</a> foi
+projetado para tornar possível a edição de documentos tipo <span
+ style="font-style: italic;">rich text</span> em
+Unix/Linux de um modo WYSIWYG. Arquivos RTF do Ted são totalmente
+compatíveis com o MS-Word. Além disso, o Ted também é um conversor de
+RTF para
+PostScript e de RTF para Acrobat PDF.</p>
+            <p>3) Para chegar ao Leafpad clique em <strong>Menu -&gt;
+Aplicativos -&gt; Acessórios -&gt;</strong> <a
+ href="http://tarot.freeshell.org/leafpad/">Leafpad</a>. Ele é um
+aplicativo simples que inclui características essenciais e usa menus
+familiares.<br>
+            </p>
+            <p>4) O <a href="http://www.geany.org/">Geany</a> (<span
+ style="font-weight: bold;">Menu -&gt; Aplicativos
+-&gt; Desenvolvimento -&gt; Geany</span>) possui reconhecimento de
+linguagens de programação e portanto é adequado ao desenvolvimento de
+aplicativos.<br>
+            </p>
+            <p>5) O <a href="http://www.abisource.com/">AbiWord</a> é
+o processador de texto da suíte de escritório do Gnome. Ele é
+multiplataforma, compatível com uma grande variedade de formatos de
+arquivo e extensível por plugins.<br>
+            </p>
+            <p>Além disso, você pode abrir qualquer texto para edição
+nos gerentes de arquivos ROX, MC e PCManFM, este último no mesmo
+local do menu que o Leafpad.</p>
+            <h4>E se um arquivo é compactado em algum formato como .tar
+etc? <a href="#What_if_a_file_is_compressed_in_some_tar"> </a><a
+ href="#What_if_a_file_is_compressed_in_some_tar">(link para a resposta
+do
+IceWM)</a></h4>
+            <h4 id="install-flux">Como faço para instalar e gerenciar
+software? <a href="#How_do_I_install_and_manage_software_">(link para
+a resposta do IceWM) </a></h4>
+            <h4>Como posso obter o meu e-mail? <a
+ href="#How_can_I_get_my_email_"> </a><a
+ href="#How_can_I_get_my_email_">(link para a resposta do IceWM)</a></h4>
+            <h4>O que o antiX oferece para navegar na Internet? <a
+ href="#What_does_antiX_offer_for_web_browsing_"> </a><a
+ href="#What_does_antiX_offer_for_web_browsing_">(link para a resposta
+do
+IceWM)</a></h4>
+            <h4>Posso bater papo com o antiX? <a
+ href="#Can_I_chat_with_antiX_"> </a><a href="#Can_I_chat_with_antiX_">(link
+para
+a
+resposta
+do
+IceWM)</a> </h4>
+            <h4>O que posso usar para gravar um CD/DVD? <a
+ href="#What_can_I_use_to_burn_a_CDDVD_"> </a><a
+ href="#What_can_I_use_to_burn_a_CDDVD_">(link para a resposta do IceWM)</a></h4>
+            <h4>O que eu uso como um agregador de notícias (RSS)? <a
+ href="#What_do_I_use_for_a_news_RSS_reader_"> </a><a
+ href="#What_do_I_use_for_a_news_RSS_reader_">(link para a resposta do
+IceWM)</a> </h4>
+            <h4>Como faço para tocar música?</h4>
+            <p>Para reproduzir um CD de áudio ponha-no em seu CD player
+e (não há autoplay) clique em <strong>Menu -&gt; Tocador de música.</strong>
+Isso abre o <a href="http://www.xmms.org/">XMMS,</a> um player
+multimídia para sistemas <a href="http://en.wikipedia.org/wiki/Unix">Unix.</a>
+Clique no botão avançar (segundo da esquerda) para iniciar o CD. Na
+primeira vez será necessário navegar até&nbsp; diretório /media/cdrom
+(nota: ../ significa o diretório superior) e adicionar as
+faixas que se deseja ouvir. </p>
+            <p>Você pode selecionar uma fonte diferente de arquivos de
+áudio para tocar no XMMS. Para fazer isso, dê um clique com o botão
+direito na barra superior do player XMMS e do menu pop-up selecione <span
+ style="font-style: italic;">Play File</span> para selecionar o
+arquivo de áudio para tocar. Para reproduzir um áudio MP3 ou arquivo <a
+ href="http://www.vorbis.com/">Ogg Vorbis</a> simplesmente
+clique sobre ele e o XMMS abre automaticamente e começa a tocar o
+arquivo.</p>
+            <p>Há também um mixer disponível na<strong> Central de
+controle -&gt; Hardware -&gt; Ajustar Misturador</strong>. A aplicação
+é o <a href="http://alsa.opensrc.org/Alsamixer">AlsaMixer</a>.<br>
+            </p>
+Se você quiser um player no terminal para as
+suas músicas no disco rígido, abra <span style="color: rgb(0, 0, 0);"><span
+ style="color: rgb(255, 0, 0);"><span
+ style="color: rgb(0, 0, 0); font-weight: bold;">Menu -&gt; CLI
+-&gt; Multimídia -&gt;</span> <a href="http://moc.daper.net/about">Cliente
+de
+música
+-
+moc.</a></span></span>
+            <h4>E sobre a reprodução de música de uma fonte na
+Internet? <a href="#What_about_playing_music_from_an"> </a><a
+ href="#What_about_playing_music_from_an">(link para a resposta do
+IceWM)</a></h4>
+            <h4>Posso extrair música com o antiX? <a
+ href="#Can_I_rip_music_with_antiX"> </a><a
+ href="#Can_I_rip_music_with_antiX">(link para a resposta do IceWM)</a></h4>
+            <h4>O DVD do filme que eu coloquei não funcionou. Como
+posso
+assistir aos filmes? <a
+ href="#O_DVD_do_filme_que_eu_coloquei_n%C3%A3o_posso">(link para a
+resposta do IceWM)</a><br>
+            </h4>
+            <h4>Existe um protetor de tela? <a
+ href="#Is_there_a_screensaver_">(link para a resposta do IceWM) </a></h4>
+            <h4>Como faço para manipular uma janela aberta? </h4>
+            <p>Além das operações padrão com os três botões no canto
+superior direito, outras possibilidades (Enviar Para, Camada etc.)
+estão disponíveis através do botão direito do mouse na barra de título.
+Um clique duplo na barra de título enrola a janela. Você também pode
+redimensioná-la arrastando o canto inferior direito. Você pode ainda
+agrupar várias janelas em uma mesma barra de título arrastando-as com o
+botão do meio do mouse.<br>
+            </p>
+            <h4>Quais aplicativos estão disponíveis para uso em
+escritório? <a href="#What_applications_are_available_for_use">(link
+para a resposta do IceWM)</a></h4>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_customization-flux"><u>Fluxbox:
+personalização básica<br>
+                  </u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Como posso mudar o menu? </h4>
+            <p><span style="font-weight: bold;">Menu -&gt; Central de
+controle -&gt; Área de Trabalho
+-&gt; Configurar Fluxbox</span>. Você pode, por exemplo, querer remover
+a entrada <span style="font-style: italic;">Instalar</span> na parte
+inferior do menu. </p>
+            <h4>E quanto aos atalhos de teclado?</h4>
+            <span style="font-weight: bold;">Menu -&gt; Central de
+controle -&gt; Área de trabalho -&gt; Configurar Fluxbox -&gt; keys</span>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <span style="font-style: italic;">Mod1</span> é a tecla <span
+ style="font-style: italic;">Alt</span> e <span
+ style="font-style: italic;">Mod4</span> é a tecla <span
+ style="font-style: italic;">Super</span>.<br>
+            <h4><a name="Como_faço_para_alterar_o_papel_de"></a>Como
+faço para alterar o papel de parede? </h4>
+            <p><span style="font-weight: bold;">Menu -&gt; Central de
+controle -&gt; Área de Trabalho
+-&gt;
+Escolher Tema de Fundo</span>. Escolha uma imagem e clique em <span
+ style="font-style: italic;">Aplicar</span>.<br>
+            </p>
+            <p>Você ainda pode usar para isso os mesmos aplicativos que
+usa para gerir os ícones na área de trabalho: ROX ou iDesk.<br>
+            <br>
+Para configurar o papel de parede com o ROX, veja <a
+ href="#Como_fa%C3%A7o_para_alterar_o_papel_de_parede">aqui</a>.<br>
+            <br>
+Para usar o iDesk, abra-o pela <span style="font-weight: bold;">CC
+-&gt; Área de Trabalho -&gt;
+Gerenciar Ícones idesk</span>, clique em preferências e adicione as
+linhas
+abaixo após a linha 'table Config':<br>
+            </p>
+            <pre>&nbsp; Background.File: image.jpg<br>&nbsp; Background.Delay: 1<br>&nbsp; Background.Source: ~/Wallpaper<br>&nbsp; Background.Mode: Scaled<br>&nbsp; Background.Color: #C2CCFF<br></pre>
+            <p>As configurações acima farão com que as imagens em
+~/Wallpaper se
+alternem a cada 1 minuto como fundo de tela. Para mudar a periodicidade
+(em minutos), alterne o valor de 'Background.Delay:'. Se você quiser
+apenas uma imagem fixa, ponha o seu caminho na linha 'Background.File:'
+e deixe 'Background.Source:' vazio. Para mais informações, veja <a
+ href="http://idesk.sourceforge.net/wiki/index.php/Idesk-usage#For_Background_support_.28after_0.7.5_version_it_will_be_optional.29">aqui</a>.<br>
+            <br>
+Se você optar por usar o ROX ou o iDesk para o gerenciamento
+do papel de parede ao invés do programa padrão no antiX que é o <a
+ href="http://projects.l3ib.org/nitrogen/">Nitrogen</a>,
+descomente as suas respectivas linhas em ~/.fluxbox/startup (no exemplo
+abaixo estamos habilitando o iDesk)<br>
+            </p>
+            <pre>##Desktop icons<br>#pcmanfm -d &amp;<br>#rox --pinboard=antiX &amp;<br>idesk &amp;<br></pre>
+            <p>e comente as linhas do nitrogen </p>
+            <pre>##Set wallpaper via nitrogen<br>#rm $HOME/.config/nitrogen/bg-saved.cfg<br>#ln -s $HOME/.config/nitrogen/bg-saved-fb.cfg $HOME/.config/nitrogen/bg-saved.cfg<br>#nitrogen --restore &amp;</pre>
+            <p> Se você usar o ROX, será preciso editar ~/.conkyrc (<span
+ style="font-weight: bold;">CC
+-&gt; Sistema -&gt; Editar Conky</span>) se quiser visualizar o <a
+ href="#conky">Conky</a>. Mude
+'own_window no' para 'own_window yes'.</p>
+            <h4> Como faço para desativar o Conky?</h4>
+            <p> Clique em <span style="font-weight: bold;">Menu -&gt;
+Área de trabalho -&gt; Área de
+trabalho -&gt;
+Conky lig./desl. </span></p>
+            <h4>Como faço para configurar? </h4>
+            <p>Além dos arquivos em <span style="font-weight: bold;">Menu
+-&gt;
+Central
+de
+controle
+-&gt;
+Configurar
+Fluxbox</span>, clique em <strong>Menu
+-&gt;
+Área de trabalho -&gt;
+Fluxbox</strong>. Aqui você pode atualizar o
+menu, configurar o Fluxbox, alterar o estilo e o papel de parede,
+editar os espaços de trabalho,
+reconfigurar e reiniciar. </p>
+            <h4>Como faço para alterar o painel? </h4>
+            <p>Clique com o botão direito do mouse sobre ele para
+selecionar se auto-ocultar ou não, onde é colocado, o seu tamanho, o
+formato do relógio etc.</p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Advanced-flux"><u>Fluxbox: avançado</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Existe um utilitário de compressão? <a
+ href="#compression_utility">(link para a resposta do IceWM)</a> </h4>
+            <h4>Existem outros estilos disponíveis? <a
+ href="#Existem_outros_temas_dispon%C3%ADveis_">(link para a resposta
+do IceWM)</a> </h4>
+            <h4>Que outras personalizações posso considerar?</h4>
+            <p>Quase tudo o que quiser. Abra a Central de controle do
+antiX para
+ver o que está disponível. </p>
+            <h4>Onde estão os arquivos de configuração para o Fluxbox? </h4>
+            <p>Eles estão em /home/<span style="font-style: italic;">usuário</span>/.fluxbox,
+e
+podem
+ser
+vistos
+abrindo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <strong>Menu -&gt; Home</strong> e clicando sobre
+o símbolo do olho para mostrar os arquivos ocultos. </p>
+            <h4>Existem ferramentas de desenvolvimento no
+antiX? <a href="#development-tools">(link para resposta IceWM)</a> </h4>
+            <h4>Que outras ferramentas do sistema são fornecidas? <a
+ href="#What_other_system_tools_are_provided"> </a><a
+ href="#What_other_system_tools_are_provided">(link para a resposta do
+IceWM)</a></h4>
+            <br>
+            <a href="#What_other_system_tools_are_provided"> </a>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Links-flux"><u>Fluxbox: links</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <ul>
+              <li><a
+ href="http://fluxbox-wiki.org/index.php/Fluxbox-wiki">Fluxbox wiki</a></li>
+              <li>O tópico <a
+ href="http://mepislovers.org/forums/showthread.php?t=8954">"How I Did
+It"</a> foi escrito originalmente para o antiX Spartacus mas ainda
+contém algumas informações em profundidade para o usuário
+iniciante do antiX.</li>
+              <li>Opções adicionais sobre a edição do menu são
+explicadas <a
+ href="http://antix.mepis.com/index.php/Fluxbox_Tips_and_Tricks_Edit_Fluxbox_Menu">nesta
+página.</a> </li>
+            </ul>
+            <br>
+            <hr>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td height="80" width="80" align="left"> <br>
+                  </td>
+                  <td valign="top" width="500" align="left">
+                  <h2 id="rox"><a name="ROX"></a> ROX</h2>
+                  <ol
+ style="font-family: sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+                    <li><a href="#First_look-rox">Primeiro olhar</a></li>
+                    <li><a href="#Basic_configuration-rox">Configuração
+básica</a></li>
+                    <li><a href="#Basic_operation-rox">Operação básica</a></li>
+                    <li><a href="#Basic_customization-rox">Personalização
+básica</a></li>
+                    <li><a href="#Advanced-rox">Avançado</a></li>
+                    <li><a href="#Links-rox">Links</a></li>
+                  </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="First_look-rox"><u>ROX: primeiro olhar</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>O que é este ambiente de trabalho? </h4>
+            <p>Esse é o <a href="http://roscidus.com/desktop/">ROX
+Desktop,</a> baseado em torno <a
+ href="http://www.mepis.org/docs/en/index.php/File_system">do sistema
+de arquivos Linux.</a> Seu componente principal é <a
+ href="http://en.wikipedia.org/wiki/ROX-Filer">ROX-Filer,</a> um
+gerenciador de arquivos poderoso. Outros componentes
+disponíveis no antiX são o painel ROX-Panel e o quadro ROX-Pinboard,
+que podem ser habilitados separadamente do Fluxbox no submenu <strong><span
+ style="font-weight: normal;"><span style="font-weight: bold;">Área de
+trabalho -&gt; Área de trabalho</span> e no IceWM no submenu <span
+ style="font-weight: bold;">Área de trabalho -&gt; Configuração</span>.</span><br>
+            </strong></p>
+            <h4>O que se pode fazer com o ROX-Filer? </h4>
+            <p>Bem, gerenciar arquivos, é claro! Mas ele tem muitos
+outros recursos que são cobertos abaixo e nos documentos listados sob <a
+ href="#ROX:_links">Links</a>. O manual do gerente de arquivos ROX
+também está disponível <span style="font-style: italic;">off-line</span>
+em /usr/share/doc/rox-filer/html/ ou pelo <span
+ style="font-weight: bold;">Exibir a ajuda do ROX-Filer</span> no seu
+menu.<br>
+            </p>
+            <h4>Para que serve o ROX-Desktop?</h4>
+            <p>Sua grande vantagem é permitir a você usar ícones para
+qualquer item no sistema de arquivos com um simples arrastar e soltar.
+Nota: se habilitado o quadro ROX, a configuração do <a href="#Conky">Conky</a>
+deve ser alterada para `own_window yes' e `own_window_type desktop'.</p>
+            <h4>E o ROX-Panel? </h4>
+            <p>Sua principal função é permitir-lhe criar e personalizar
+o seu próprio painel. </p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_configuration-rox"><u>ROX: configuração
+básica</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Como posso evitar ter de lançar o ROX-Desktop toda vez?
+            </h4>
+            <p>O ROX-Desktop pode iniciar automaticamente através de
+uma
+simples edição no Fluxbox ou no IceWM. Em <span
+ style="font-weight: bold;">Central de controle -&gt; Área
+de Trabalho
+-&gt;
+Configurar Fluxbox/IceWM -&gt; Startup</span>, remova o # dessa linha: </p>
+            <pre># rox --pinboard=antiX &amp;</pre>
+            <p>Salve e saia/autentique-se na sessão para ter seu
+ROX-Desktop
+pré-personalizado pelo antiX (veja abaixo) utilizando o gerenciador de
+janelas de sua
+escolha. Restaure o símbolo de comentário à linha acima se você quiser
+acabar com o uso permanente do ROX-Desktop.<br>
+            </p>
+            <p>Se quiser iniciar também o painel, adicione a seguinte
+linha ao arquivo <span style="font-style: italic;">startup</span> do
+IceWM/Fluxbox:<br>
+            </p>
+            <pre>rox -t=meupainel &amp;</pre>
+            <p>A opção -t (top) põe o painel na margem superior, -l
+(left) põe-no à esquerda, -r (right) à direita e -B (bottom) embaixo
+(note o 'B' maiúsculo). Mais informações <a href="#ROX:_links">aqui</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <span style="font-style: italic;">rox -h</span> num
+terminal mostra todas as opções e os seus significados.<br>
+            </p>
+            <p>Nota: se você optar por ter o ROX-Desktop iniciando
+automaticamente então as opções painel e quadro no submenu do Fluxbox <strong>Área
+de
+trabalho
+-&gt;
+Área
+de
+trabalho</strong>
+ou no submenu do IceWM <span style="font-weight: bold;">Área de
+trabalho -&gt; Configuração</span> não devem mais ser usadas. </p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_operation-rox"><u>ROX: operação básica</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Quais são os movimentos básicos para usar com o
+ROX-Filer? </h4>
+            <ul>
+              <li>Botão esquerdo do mouse sobre o arquivo/pasta para
+abrir
+seu conteúdo.</li>
+              <li>Botão do meio em uma pasta abre ela em uma janela
+separada.</li>
+              <li>Botão do meio em um arquivo abre o arquivo e
+fechar a janela do gerenciador de arquivos.</li>
+              <li>Botão direito do mouse em um arquivo/pasta abre a
+caixa de diálogo do ROX, onde você pode ver e definir opções.</li>
+            </ul>
+            <p>Estas são as opções padrão e podem ser modificadas
+clicando-se com o botão direito no fundo de uma janela do ROX e
+escolhendo <span style="font-style: italic;">Opções...</span>.<br>
+            </p>
+            <h4>Como faço para mover arquivos?</h4>
+            <p>Isso é provavelmente mais fácil com duas janelas
+abertas: basta arrastar de uma para a outra.</p>
+            <h4>Como faço para colocar ícones no meu desktop ROX?</h4>
+            <p>É muito fácil! Para adicionar ícones de atalho a
+dispositivos, aplicações, pastas e arquivos no desktop basta
+arrastar e soltar a partir do ROX-Filer. </p>
+            <h4>Que tal um dispositivo, por exemplo um CD-ROM ou drive
+de disquete? </h4>
+            <p>Abra o ROX-Filer e navegue até a pasta /media. Clique
+sobre o dispositivo que você desejar, arraste e
+solte para onde você quiser na tela.</p>
+            <h4>Posso criar atalhos para aplicações?</h4>
+            <p>Você pode fazer isso também, mas primeiro precisa
+saber onde se encontra o executável do programa. Geralmente está em
+/usr/bin ou /usr/local/bin mas você
+pode encontrá-lo abrindo um terminal e digitando:</p>
+            <pre>which NomeDoAplicativo</pre>
+            <p>Depois de encontrá-lo abra o ROX-Filer e navegue até a
+sua localização. Clique sobre o arquivo do aplicativo
+(se houver uma ligação simbólica, escolha esta) e - aqui vamos nós
+outra vez - arraste e solte para onde quiser na tela.</p>
+            <h4>Com diretórios e arquivos faço da mesma maneira? </h4>
+            <p>Exato.</p>
+            <h4>Quais são os truques com o ROX-Panel? </h4>
+            <p>Você pode usar as mesmas técnicas descritas acima, só
+que arraste até o painel em vez de ao desktop. Para remover, clique com
+o botão
+direito do mouse e selecione <em>Remover Item(ns).</em></p>
+            <h4>Eu ainda posso ver o painel do Fluxbox apesar de eu ter
+alternado para o ROX-Panel. O que devo fazer? </h4>
+            <p>Ele desaparece assim que o cursor está sobre o
+ROX-Panel, mas há uma gambiarra fácil: clique com o botão direito do
+mouse no
+painel do Fluxbox e selecione <em>Esconder Automaticamente</em> para
+que ele
+desapareça
+quando não estiver em uso.</p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_customization-rox"><u>ROX:
+personalização básica<br>
+                  </u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4><a name="Como_faço_para_alterar_o_papel_de_parede"></a>Como
+faço
+para
+alterar
+o
+papel
+de parede no quadro ROX?</h4>
+            <p>Um método é:<br>
+1) Clique na pasta home, navegue até ~/Rox e clique em Wallpaper.<br>
+2) Clique em Imagens azulejadas, Imagens escalonadas, Imagens esticadas
+ou Imagens centralizadas (qual for mais adequado à imagem a ser
+utilizada).<br>
+3) Abra outra janela do ROX-Filer, navegue até onde se encontra a
+imagem que deseja usar e arraste-a para o diretório Imagens
+azulejadas/escalonadas/esticadas/centralizadas (o que você abriu).<br>
+4) Se você quiser que o fundo se alterne de tempos em tempos, arraste
+mais alguma(s) imagem(ns) para lá e defina <span
+ style="font-style: italic;">Mudar a cada x minuto(s)</span> conforme
+preferir. O Wallpaper utilizará as imagens dos quatro diretórios acima.<br>
+5) Clique em <span style="font-style: italic;">Ativar o modo Aleatório</span>
+e em seguida <span style="font-style: italic;">Fechar</span>.</p>
+            <p>Outro método é:<br>
+1) Coloque o seu papel de parede na pasta Wallpaper no seu
+diretório home.<br>
+2) Clique na pasta home, navegue até Wallpaper e arraste e solte a
+imagem escolhida para o desktop.<br>
+3) Clique com o botão direito do mouse sobre o arquivo arrastado e
+escolha <span style="font-style: italic;">Fundo...</span>,
+em seguida arraste o arquivo para o espaço onde se diz <span
+ style="font-style: italic;">Arraste uma imagem para cá</span>.
+Selecione o tratamento da imagem no alto (Centralizar, Escalonar etc.)<br>
+4) Clique com o botão direito do mouse sobre o arquivo de imagem
+arrastado e
+selecione <span style="font-style: italic;">Remover Item(ns)</span>. </p>
+            <p>Mais informações podem ser encontradas no <a
+ href="http://roscidus.com/desktop/node/72">guia de personalização do
+desktop.</a> </p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Advanced-rox"><u>ROX: avançado</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Como posso definir a aplicação padrão para abrir um
+arquivo?</h4>
+            <p>Se desejar alterar a aplicação padrão que será usada
+para abrir um tipo de arquivo, siga estas instruções:<br>
+1) Clique com o botão direito do mouse sobre o arquivo que você está
+interessado em mudar e clique em <span style="font-style: italic;">Arquivo
+-&gt;
+Definir
+Ação
+Para
+Execução...</span><br>
+2) Digite o nome do aplicativo na caixa denominada <em>Informe um
+comando shell.</em> Observação: deixe um espaço entre a última letra do
+aplicativo e o sinal ".<br>
+3) Salve e o arquivo agora será aberto no aplicativo de sua escolha. </p>
+            <h4>É possível ter mais de uma configuração para o quadro?</h4>
+            <p>É sim. Os scripts <span style="font-style: italic;">startup</span>
+do IceWM e do Fluxbox abrem um quadro personalizado (chamado 'antiX') e
+            <span style="font-weight: bold;">Menu -&gt; Área de
+trabalho -&gt; Área de trabalho -&gt; Quadro ROX lig./desl.</span>
+(Fluxbox) e <span style="font-weight: bold;">Menu -&gt; Área de
+trabalho -&gt; Configuração -&gt; Quadro ROX lig./desl.</span> (IceWM)
+abrem o quadro padrão (chamado 'Pinboard') com uma personalização
+mínima (a imagem de fundo). Os seus arquivos de configuração
+encontram-se em ~/.config/rox.sourceforge.net/ROX-filer/ sob os nomes
+de pb_antiX e pb_Pinboard respectivamente. Se você abre o quadro pelo
+menu e faz as mudanças que desejar, elas serão salvas em pb_Pinboard e
+retornarão quando você abrir o quadro novamente. Se você quiser criar
+um outro quadro com uma configuração diferente abra <span
+ style="font-weight: bold;">Menu -&gt; Executar</span> e digite<br>
+            </p>
+            <pre>rox -p=meuquadro</pre>
+(substitua 'meuquadro' pelo nome que quiser). Isso abrirá um quadro
+padrão; modifique-o à vontade e ele será automaticamente salvo sob o
+nome dado. Então você poderá adicionar uma entrada para ele no menu do
+Fluxbox/IceWM (ver abaixo). Note que -p é o mesmo que --pinboard
+(digite <span style="font-style: italic;">rox -h</span> num terminal
+para conhecer todas as opções e seus significados).<br>
+            <h4>Posso fazer com que o quadro ROX abra o meu
+próprio ao invés de um padrão? </h4>
+            <p>Você pode lançar o seu quadro pessoal editando o menu do
+Fluxbox como descrito anteriormente. Abra ~/.fluxbox/menu num editor de
+texto e adicione
+essa linha num lugar apropriado:<br>
+            </p>
+            <pre>[exec] (Meu quadro) {rox --pinboard=meuquadro}</pre>
+            <p>Pra o menu do IceWM (~/.icewm/menu), seria<br>
+            </p>
+            <pre>prog "Meu quadro" /caminho/ao/ícone/ou/um/traço/-/para/nada rox --pinboard=meuquadro</pre>
+            <p>Certifique-se de substituir 'meuquadro' pelo nome real
+do quadro que você deseja carregar. Dessa forma vários quadros podem
+ser
+configurados e relacionados no menu do Fluxbox/IceWM.
+Muito conveniente!</p>
+            <h4>Posso personalizar os ícones? </h4>
+            <p>Se você tiver <a
+ href="http://antix.mepis.org/index.php/Howto_articles#Adding_Icons_to_Desktop">adicionado
+ícones
+no
+desktop,</a> então:<br>
+1) Clique com o botão direito do mouse sobre o tipo de ícone que você
+deseja alterar e em <span style="font-style: italic;">Arquivo (ou Dir)
+-&gt; Definir o Ícone...</span><span style="font-style: italic;"></span><br>
+2) Selecione uma das opções disponíveis (somente para o
+arquivo/diretório, para todos do mesmo tipo etc.)<br>
+3) Agora arraste e solte na caixa o ícone de outra janela do ROX e <span
+ style="font-style: italic;">voilà</span>! O ícone
+escolhido agora aparece no desktop (se definido para todos do mesmo
+tipo é necessário reiniciar - fechar/abrir - o quadro ROX).<br>
+            </p>
+            <p>Note que ao escolher um tema de ícones para o ROX-Filer
+ele se estende aos itens no desktop (menos para os itens que tenham
+sido modificados individualmente). Para isso clique com o botão direito
+no fundo de uma janela do gerente de arquivos ROX <span
+ style="font-style: italic;">-&gt; Opções... -&gt; Tipo -&gt; Tema de
+ícones</span>, escolha um entre os disponíveis e clique <span
+ style="font-style: italic;">OK</span> (aplica-se imediatamente para o
+gerente de arquivos mas é necessário reiniciar o quadro para que as
+mudanças se façam no desktop).<br>
+            </p>
+            <h4>Como faço para editar o nome de um atalho?</h4>
+            <p>Clique com o botão direito do mouse sobre o ícone, em
+seguida em <span style="font-style: italic;">Editar o Item</span> e
+altere o nome exibido na caixa <span style="font-style: italic;">O
+texto sob
+o ícone é:</span>. Clique <span style="font-style: italic;">OK </span>para
+finalizar.<span style="font-style: italic;"><br>
+            </span></p>
+            <h4>O que são as teclas de atalho do ROX? </h4>
+            <p>As teclas de atalho no ROX são uma combinação
+específica de teclas para abrir uma pasta ou arquivos com um único ou
+no máximo 2
+cliques. Veja <a
+ href="http://antix.mepis.org/index.php/ROX_tips_and_tricks_Keyboard_Shortcuts">a
+explicação
+detalhada.</a> </p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Links-rox"><u>ROX:
+links</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <ul>
+              <li><a href="http://roscidus.com/desktop/guide">ROX
+Desktop Guidebook</a></li>
+              <li><a href="http://roscidus.com/desktop/hints_and_tips">Dicas
+e
+sugestões
+para
+o
+ROX-Desktop<br>
+                </a></li>
+              <li><a
+ href="http://rox.sourceforge.net/Manual/Manual/Manual.html#icons">Manual
+do
+ROX-Filer</a> </li>
+            </ul>
+            <br>
+            <hr>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td height="80" width="80" align="left"> <br>
+                  </td>
+                  <td valign="top" width="500" align="left">
+                  <h2 id="conky"><a name="Conky"></a>Conky</h2>
+                  <ol
+ style="font-family: sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+                    <li><a href="#First_look-conk">Primeiro olhar</a></li>
+                    <li><a href="#Basic_configuration-conk">Configuração
+básica</a></li>
+                    <li><a href="#Basic_operation-conk">Operação básica</a></li>
+                    <li><a href="#Basic_customization-conk">Personalização
+básica</a></li>
+                    <li><a href="#Advanced-conk">Avançado</a></li>
+                    <li><a href="#Links-conk">Links</a></li>
+                  </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="First_look-conk"><u>Conky: primeiro olhar</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>O que é essa coisa que eu vejo no canto superior
+esquerdo? </h4>
+            <p>Essa é a saída do <a
+ href="http://conky.sourceforge.net/">Conky,</a> um <a
+ href="http://en.wikipedia.org/wiki/System_monitor">monitor do sistema</a>
+poderoso
+carregado por padrão no antiX. </p>
+            <h4>Para que serve? </h4>
+            <p> O Conky pode exibir qualquer coisa que
+você queira monitorar, seja sobre a área de trabalho ou em sua própria
+janela.</p>
+            <h4>Você pode me dar alguns exemplos? </h4>
+            <p>Claro: espaço em disco, carga do
+sistema, status da rede sem fios, estado da bateria, velocidade de
+download e de upload, conexões de Internet por protocolo, uso da RAM,
+utilização de swap, os processos em execução, previsão do tempo etc.</p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_configuration-conk"><u>Conky:
+configuração básica</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Como faço para configurá-lo? </h4>
+            <p>O Conky já vem instalado e configurado por padrão no
+antiX
+para exibir informações básicas do sistema. Abra ~/.conkyrc num editor
+de textos ou a <span style="font-weight: bold;">Central de controle
+-&gt; Sistema -&gt; Editar Conky</span> e dê uma olhada nas informações
+do arquivo. Você verá que ele traz comentadas inclusive algumas opções
+já configuradas para laptops (como monitoramento do estado da bateria).
+Se quiser exibi-las, descomente-as (remova o sinal # do início da
+linha) e salve.<br>
+            </p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_operation-conk"><u>Conky: operação
+básica</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Como faço para desligá-lo? </h4>
+            <ul>
+              <li><strong>IceWM:</strong> <span
+ style="font-weight: bold;">Menu</span><strong>
+-&gt;
+Área
+de
+trabalho
+-&gt;
+Configuração
+-&gt;
+Conky
+lig./desl.</strong></li>
+              <li><strong>Fluxbox:</strong> <span
+ style="font-weight: bold;">Menu -&gt; </span><strong>Área
+de
+trabalho
+-&gt;
+Área
+de
+trabalho
+-&gt;
+Conky
+lig./desl.</strong></li>
+            </ul>
+Isso serve para ligá-lo também.<br>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Basic_customization-conk"><u>Conky:
+personalização básica<br>
+                  </u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Como posso mudar a aparência do Conky ou as informações
+exibidas? </h4>
+            <p>Siga esses passos:<br>
+1) Abra a <span style="font-weight: bold;">Central de controle -&gt;
+Sistema -&gt; Editar Conky</span>.
+Isso abrirá um editor de texto com o seu script .conkyrc.<br>
+2) Antes de começar a editar, faça uma cópia de seu script padrão do
+Conky (~/.conkyrc) com um nome diferente como "conkyrc_original". Dessa
+forma se
+você cometer um erro ou não gostar das alterações, você pode recarregar
+o script padrão.<br>
+3) Faça as alterações que você gostaria na configuração do Conky, salve
+e saia. Talvez você precise clicar duas vezes em <strong
+ style="font-weight: bold;">Menu</strong><span
+ style="font-weight: bold;"> </span><strong style="font-weight: bold;">-&gt;
+Área
+de
+trabalho
+-&gt;
+Configuração
+-&gt;
+Conky</strong><span style="font-weight: bold;">
+lig./desl.</span> para desativá-lo e
+reativá-lo para ver as alterações. A seção de opções (<span
+ style="font-style: italic;">options</span>)
+no arquivo ~/.conkyrc fornece algumas dicas úteis.</p>
+            <h4>Posso usar o terminal para fazer isto?</h4>
+            <p>Você pode editar o arquivo de configuração do Conky em
+um terminal, digitando (substitua pelo seu nome de usuário):</p>
+            <pre>nano /home/<span style="font-style: italic;">usuário</span>/.conkyrc</pre>
+            <p>Isso abrirá o arquivo de configuração no Nano.</p>
+            <h4>Isso é um longo arquivo: onde eu coloco minhas
+alterações? </h4>
+            <p>Todas as mudanças no estilo estão acima da palavra
+"TEXT" (perto do fim do arquivo), alterações do conteúdo exibido vão
+abaixo.</p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Advanced-conk"><u>Conky: avançado</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Que recursos extras possui o Conky?</h4>
+            <p>Há uma longa lista de possíveis variáveis <a
+ href="http://conky.sourceforge.net/variables.html">aqui</a> ou com o
+comando <span style="font-style: italic;">man conky</span> num
+terminal.<br>
+            </p>
+            <h4>Como eu posso fazer as mudanças de estilo, como cor,
+caixas, etc?</h4>
+            <p>Variáveis de estilo disponíveis estão listadas <a
+ href="http://conky.sourceforge.net/config_settings.html">aqui</a> ou
+com o comando <span style="font-style: italic;">man conky</span> num
+terminal.<br>
+            </p>
+            <h4>Pode me dar um par de exemplos de uso avançado?</h4>
+            <p> Claro, você pode querer experimentar estes para
+começar, alterando as cores como desejar (a maioria das cores em
+/etc/X11/rgb.txt funciona):</p>
+            <ul>
+              <li>Monitorar os processos principais:
+                <pre>${color white} Processos principais (PID CPU% MEM%) <br>${color green}${top name 1}${color white} ${top pid 1} ${top cpu 1} ${top mem 1} <br>${color red}${top name 2}${color white} ${top pid 2} ${top cpu 2} ${top mem 2} <br>${color red}${top name 3}${color white} ${top pid 3} ${top cpu 3} ${top mem 3} <br>${color red}${top name 4}${color white} ${top pid 4} ${top cpu 4} ${top mem 4}</pre>
+                <br>
+              </li>
+              <li>Monitorar a bateria de um laptop:
+                <pre>${color red}estado da bateria:${color white} ${battery} <br>${color red}força da bateria:${color green} ${battery_bar 7,50}</pre>
+                <br>
+              </li>
+              <li>Adicionar uma seção para a rede sem fio (mude a
+interface se
+necessário):
+                <pre>${color white}Rede sem fio: <br>${color green}essid: ${wireless_essid wlan0} <br>${color red}IP:${color white} ${addr wlan0} <br>${color red}força do link: ${color white} ${wireless_link_bar 7,50 wlan0}</pre>
+              </li>
+            </ul>
+            <p>Para mais exemplos, siga os links abaixo e pesquise na
+Internet.</p>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td valign="top" width="500" align="left">
+                  <h3 id="Links-conk"><u>Conky: links</u></h3>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <ul>
+              <li><a
+ href="http://www.vivaolinux.com.br/artigo/Monitore-o-seu-Linux-com-o-Conky/">Monitore
+o
+seu
+Linux
+com
+o
+Conky.</a><br>
+              </li>
+              <li><a
+ href="http://www.vivaolinux.com.br/dica/Ajuda-para-configurar-o-Conky/">Ajuda
+para
+configurar
+o
+Conky.</a> </li>
+              <li><a
+ href="http://ubuntuforums.org/showthread.php?t=281865">Uma variedade
+de
+arquivos de configuração do Conky</a> </li>
+              <li><a
+ href="http://linuxowns.wordpress.com/2008/04/04/create-a-custum-conky-setup/">Configuração
+do
+Conky
+para
+o
+tempo,
+o
+Gmail
+e
+o
+áudio</a></li>
+              <li><a href="http://conky.linux-hardcore.com/">Conky
+Hardcore!</a></li>
+              <li><a href="http://crunchbanglinux.org/wiki/conky">Wiki
+do Conky no Linux #!.</a><br>
+              </li>
+            </ul>
+            <br>
+            <hr>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td height="80" width="80" align="left"> <br>
+                  </td>
+                  <td valign="top" width="500" align="left">
+                  <h2 id="smxi"><u>smxi</u></h2>
+                  <ol
+ style="font-family: sans-serif; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+                    <li><a href="#What_is_smxi">O que é o smxi?</a></li>
+                    <li><a href="#What_can_smxi_do">O que pode fazer o
+smxi?</a></li>
+                    <li><a href="#How_to_use_smxi">Como se usa o smxi?</a></li>
+                    <li><a href="#How_to_use_sgfxi">E o sgfxi?</a></li>
+                    <li><a href="#Como_posso_obter_ajuda_com_o_smxi">Como
+posso
+obter
+ajuda
+com o smxi?</a></li>
+                  </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 id="What_is_smxi">O que é o smxi?</h4>
+            <p>O <a href="http://techpatterns.com/forums/about736.html">smxi</a>
+é um script escrito por um programador chamado h2 que permite aos
+usuários manter o seu antiX atualizado constantemente.</p>
+            <h4 id="What_can_smxi_do">O que pode fazer o smxi?</h4>
+            <p>Quando executado, o smxi permite aos usuários instalar
+ou remover um kernel, instalar os drivers gráficos da ATI e da nVidia,
+executar&nbsp;<span style="font-style: italic;">apt-get dist-upgrade</span>
+com segurança, fazer do antiX um sistema baseado no Debian sid ou
+no&nbsp;sidux e muito mais!<br>
+            </p>
+            <p>O smxi é auto-explicativo. Para ver as opções de uso,
+execute <span style="font-style: italic;">smxi -h</span>.<br>
+            </p>
+            <h4 id="How_to_use_smxi">Como se usa o smxi?</h4>
+            <p>O smxi já está instalado no antiX-M8.5 e pronto para ser
+executado. O smxi deve ser executado fora do <a
+ href="http://pt.wikipedia.org/wiki/X_Window_System">X Window System</a>.
+Para
+sair
+do
+X,
+quando
+em
+seu
+desktop,
+pressione
+Ctrl-Alt-F1
+para
+chegar
+a
+um
+terminal,
+autentique-se
+como
+root&nbsp;e
+digite:
+
+
+
+
+
+
+
+
+
+
+
+
+            </p>
+            <pre>smxi</pre>
+            <p>O smxi então vai interromper o X e fará uma série de
+perguntas na primeira vez que
+é executado, incluindo opções de qual sistema você deseja executar
+(isto é, padrão,&nbsp;sidux ou sid). anticapitalista, o desenvolvedor
+do antiX, sugere selecionar a opção de não-mudança <span
+ style="font-style: italic;">continue-no-changes</span>, usando o
+apt-get
+(ao invés de aptitude) e apt-get dist-upgrade.<br>
+            </p>
+            <p>Para executar o smxi antes de carregar a área de
+trabalho, ponha um <span style="font-style: italic;">3</span> no fim
+da linha kernel da entrada do antiX no menu do GRUB (pressione <span
+ style="font-style: italic;">e</span> durante a tela do menu para poder
+editá-lo). Assim o sistema carregar-se-á para uma tela de terminal.
+Após a sua execução o smxi oferecerá a opção de carregar a área de
+trabalho.<br>
+            </p>
+            <h4 id="How_to_use_sgfxi">E o sgfxi? O que ele faz?</h4>
+            <p>O sgfxi é o script do smxi que lida com a instalação de
+drivers gráficos. Como o smxi, ele deve ser
+executado fora do ambiente de trabalho X. Logado como root, entre: </p>
+            <pre>sgfxi</pre>
+            <h4>O
+que é o inxi?</h4>
+            <strong></strong>Também está incluído no antiX o <a
+ href="http://smxi.org/">inxi,</a> um script do H2, o autor do smxi e
+do sgfxi. O inxi é um script de linha de comando que fornece
+informações do
+sistema. Execute <span style="font-style: italic;">inxi -h</span> para
+todas as opções disponíveis, para
+atualizar
+execute <span style="font-style: italic;">inxi -U</span>.<br>
+Se você quiser mais informações visite o <a
+ href="http://techpatterns.com/forums/forum-33.html">fórum de usuários
+&nbsp;do smxi/sgfxi/inxi</a>&nbsp;(em inglês). <br>
+            <h4 id="Getting_help_smxi"><a
+ name="Como_posso_obter_ajuda_com_o_smxi"></a>Como posso obter ajuda
+com o
+smxi?</h4>
+            <p>Para obter mais informações sobre o script smxi, veja: </p>
+            <ul>
+              <li> <a href="http://smxi.org/">Página inicial do smxi</a></li>
+              <li><a href="http://techpatterns.com/forums/forum-33.html">Fórum
+do
+smxi</a> </li>
+              <li><a href="http://antix.freeforums.org/index.php">smxi
+no antiX</a> </li>
+            </ul>
+            <br>
+            <br>
+            <table bgcolor="#d3d3d3">
+              <tbody>
+                <tr valign="top" align="center">
+                  <td height="80" width="80" align="left"> <br>
+                  </td>
+                  <td valign="top" width="600" align="left">
+                  <p style="text-align: center;">&nbsp;<br>
+&nbsp;<br>
+FIM DO ARQUIVO<br>
+Revisão: 2010-06-22<br>
+                  <br>
+                  <br>
+                  </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </td>
+          </tr>
+          <tr>
+            <td><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
